@@ -1,0 +1,125 @@
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.nav-container{
+    height: 65px !important;
+    box-shadow: 0px 1px 4px #888888 !important;
+    background-color: #ffff !important;
+}
+.nav-item,
+.nav-media-item{
+    color: #000 !important;
+}
+.contact-page{
+    margin-top: 65px;
+    width: 100%;
+}
+.contact-slide{
+    width: 100%;
+    position: relative;
+}
+.contact-slide-img{
+    width: 100%;
+}
+.contact-slide-img > img{
+    width: 100%;
+}
+.contact-slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+.contact-slide-content{
+   height: 30%;
+   position: absolute;
+   left: 100px;
+   bottom: 100px;
+   color: aliceblue;
+}
+.contact-slide-content > h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.contact-form-container{
+    width: 100%;
+    display: inline-flex;
+}
+.contact-info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 32px 64px;
+}
+.contact-info > h3,
+.contact-info > p{
+    margin: 16px 0;
+}
+.contact-info > p >i {
+    margin-right: 8px;
+}
+.contact-info-line{
+    align-self: flex-end;
+    font-size: 52px;
+    animation: rotateLine 2s infinite; 
+}
+@keyframes rotateLine {
+    form{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+}
+.contact-form {
+    width: 50%;
+    border-left: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+}
+.form-group {
+    margin: 12px 0;
+    width: 70%;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.button-container{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+.button-container > button {
+    padding: 10px 20px;
+    background-color: #cf3339;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-container > button:hover {
+    background-color: #b01c21;
+}

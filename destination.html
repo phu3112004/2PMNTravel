@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2PM&</title>
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="/script.js">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link rel="icon" href="/assest/img/icon.png">
+    <link rel="stylesheet" href="assest/destination.css"> 
+  
+</head>
+<body>
+   <div id="main"> 
+    <div class="nav-container">
+        <a href="index.html" class="logo"><img src="/assest/img/logo-black.png"></a>
+        <ul class="nav-items-container">
+            <li><a href="#" class="nav-item">EXPLORE</a>
+                <ul class="sub-nav">
+                    <li><a href="#" class="sub-nav-item">Hotel</a></li>
+                    <li><a href="#" class="sub-nav-item">Road Trips</a></li>
+                    <li><a href="adventure.html" class="sub-nav-item">Adventures<i class="fa-solid fa-chevron-right"></i></a>
+                        <ul class="sub-nav">
+                            <li><a href="#" class="sub-nav-item">Kayaking</a></li>
+                            <li><a href="activities.html" class="sub-nav-item">Whitewater Rafting</a></li>
+                            <li><a href="#" class="sub-nav-item">Camping</a></li>
+                            <li><a href="#" class="sub-nav-item">Multi-Sport</a></li>
+                            <li><a href="#" class="sub-nav-item">Rowing</a></li>
+                           <li><a href="#" class="sub-nav-item">Hiking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="sub-nav-item">Cities</a></li>
+                    <li><a href="#" class="sub-nav-item">Scenery</a></li>
+                    <li><a href="tours.html" class="sub-nav-item">+ All tour</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-item">DESTINATIONS</i></a>
+                <ul class="sub-nav">
+                    <li><a href="destination.html" class="sub-nav-item">Vietnam</a></li>
+                    <li><a href="#" class="sub-nav-item">World<i class="fa-solid fa-chevron-right"></i></a>
+                        <ul class="sub-nav">
+                            <li><a href="#" class="sub-nav-item">Indonesia</a></li>
+                            <li><a href="#" class="sub-nav-item">Singapore</a></li>
+                            <li><a href="#" class="sub-nav-item">Japan</a></li>
+                            <li><a href="#" class="sub-nav-item">China</a></li>
+                            <li><a href="#" class="sub-nav-item">Korea</a></li>
+                            <li><a href="#" class="sub-nav-item">Thailand</a></li>
+                            <li><a href="#" class="sub-nav-item">France</a></li>
+                            <li><a href="#" class="sub-nav-item">Italy</a></li>
+                            <li><a href="#" class="sub-nav-item">Cuba</a></li>
+                            <li><a href="#" class="sub-nav-item">USA</a></li>
+                            <li><a href="#" class="sub-nav-item">+ All Country</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="blog.html" class="nav-item">BLOG</a></li>
+            <li><a href="about.html" class="nav-item">ABOUT</a></li>
+            <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+        </ul>
+
+        <div class="nav-media">
+            <a class="nav-media-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="nav-media-item" href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a class="nav-media-item" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a class="nav-media-item" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a class="nav-media-item" href="https://x.com/"><i class="fa-brands fa-tiktok"></i></a>
+            <label class="nav-media-item" for="checkbox-login"><i class="fa-solid fa-user"></i></label>
+            <input type="checkbox" id="checkbox-login" style="display: none;">
+            <label class="login-container" for="checkbox-login">
+                <label class="login-close" for="checkbox-login"><i class="fa-solid fa-xmark"></i></label>
+                <div class="login-area" onclick="stopPropagation(event)">
+                    <h1>Log in</h1>
+                    <p>Enter your email to log in</p>
+                    <div class="login-form">
+                        <div class="login-input">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+                        <div class="login-input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input style="width: 80%;" type="password" name="password" placeholder="Password">
+                            <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                        </div>
+                        <button>Log in with email</button>
+                    </div>
+                    <div class="login-google">
+                        <div class="login-line-divide">
+                            <span>or continue with:</span>
+                        </div>
+                        <button class="login-google-button">
+                            <img src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png" alt="">
+                            Google
+                        </button>
+                    </div>
+                    <div class="login-tele">
+                        <p>Don't have an account?</p>
+                        <a onclick="goToSign()">Sign up</a>
+                    </div>
+                    <div class="login-tele">
+                        <p>By clicking continue, you agree to our</p>
+                        <a href="#">Terms of Service</a>
+                        <p>and</p>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="destination-page">
+        <div class="des-slide">
+           <img src="https://katana.bdatrip.com/image/w=3840,q=100/https://images.bdatrip.com/2023/10/vietnam-travel.jpg" alt=""> 
+        </div>
+        <div class="des-find-container">
+            <div class="find-content">
+                <label for="find-destination" class="des-title">REGION</label>
+                <select id="find-destination" class="des-find-dropdown">
+                    <option value="North" >NORTH</option>
+                    <option value="Central" >CENTRAL</option>
+                    <option value="South" >SOUTH</option>
+                </select>
+            </div>
+            <div class="des-find-search">
+                <input type="text" placeholder="Search">
+                <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="des-tour-item">
+            <div class="des-tour-item-container">
+                <div class="tour-item-img">
+                    <img src="https://static.vinwonders.com/production/thap-rua-ho-guom-2.jpg" alt="">
+                </div>
+                <div class="tour-item-content">
+                    <p class="tour-item-tag">Turtle Tower</p>
+                    <a href="#" class="tour-item-title">Experience and learn about the historical symbol of Hoan Kiem lake </a>
+                    <div class="tour-item-rate">
+                            <p class="tour-item-day">1 Day</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9</p>
+                            <p>(120)</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Location:</div>
+                         <p>Ha Noi</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Level:</div>
+                         <p>Easier to Moderate</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Minimum Age:</div>
+                         <p>All Age</p>
+                    </div>
+                    <div class="tour-item-price">
+                        <div class="tour-item-price-title">
+                            <p>From</p>
+                            <h2>$100</h2>
+                        </div>
+                        <div class="tour-item-price-compare">
+                            COMPARE 
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="des-tour-item-container">
+                <div class="tour-item-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ph%E1%BB%91_T%E1%BA%A1_Hi%E1%BB%87n_-_NKS.jpg/1200px-Ph%E1%BB%91_T%E1%BA%A1_Hi%E1%BB%87n_-_NKS.jpg" alt="">
+                </div>
+                <div class="tour-item-content">
+                    <p class="tour-item-tag">Hanoi Old Quarter</p>
+                    <a href="#" class="tour-item-title">Enjoy Vietnamese culture and cuisine </a>
+                    <div class="tour-item-rate">
+                            <p class="tour-item-day">1 Day</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9</p>
+                            <p>(120)</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Location:</div>
+                         <p>Ha Noi</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Level:</div>
+                         <p>Easier to Moderate</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Minimum Age:</div>
+                         <p>All Age</p>
+                    </div>
+                    <div class="tour-item-price">
+                        <div class="tour-item-price-title">
+                            <p>From</p>
+                            <h2>$50</h2>
+                        </div>
+                        <div class="tour-item-price-compare">
+                            COMPARE 
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="des-tour-item-container">
+                <div class="tour-item-img">
+                    <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/jycrgl4auw58tmjfdusp/V%C3%A9%20M%C3%BAa%20R%E1%BB%91i%20N%C6%B0%E1%BB%9Bc%20Th%C4%83ng%20Long%20T%E1%BA%A1i%20H%C3%A0%20N%E1%BB%99i.jpg" alt="">
+                </div>
+                <div class="tour-item-content">
+                    <p class="tour-item-tag">Water Puppet show</p>
+                    <a href="#" class="tour-item-title">Visit and enjoy one of the traditional arts of the North </a>
+                    <div class="tour-item-rate">
+                            <p class="tour-item-day">1 Day</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>3</p>
+                            <p>(120)</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Location:</div>
+                         <p>Ha Noi</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Level:</div>
+                         <p>Easier to Moderate</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Minimum Age:</div>
+                         <p>All Age</p>
+                    </div>
+                    <div class="tour-item-price">
+                        <div class="tour-item-price-title">
+                            <p>From</p>
+                            <h2>$10</h2>
+                        </div>
+                        <div class="tour-item-price-compare">
+                            COMPARE 
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="des-tour-item-container">
+                <div class="tour-item-img">
+                    <img src="https://www.kkday.com/vi/blog/wp-content/uploads/du-lich-sapa.jpg" alt="">
+                </div>
+                <div class="tour-item-content">
+                    <p class="tour-item-tag">Sapa</p>
+                    <a href="#" class="tour-item-title">Wander the pagoda complex before climbing the last few steps to the summit </a>
+                    <div class="tour-item-rate">
+                            <p class="tour-item-day">2 Day</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9</p>
+                            <p>(1000+)</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Location:</div>
+                         <p>Lao Cai</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Level:</div>
+                         <p>Easier to Moderate</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Minimum Age:</div>
+                         <p>All Age</p>
+                    </div>
+                    <div class="tour-item-price">
+                        <div class="tour-item-price-title">
+                            <p>From</p>
+                            <h2>$100</h2>
+                        </div>
+                        <div class="tour-item-price-compare">
+                            COMPARE 
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="des-tour-item-container">
+                <div class="tour-item-img">
+                    <img src="https://static-images.vnncdn.net/files/publish/2022/7/27/ha-long-bay-1-852.jpg" alt="">
+                </div>  
+                <div class="tour-item-content">
+                    <p class="tour-item-tag">Ha Long Bay</p>
+                    <a href="#" class="tour-item-title">Watching the sun set over the calm waters of Ha Long Bay       </a>
+                    <div class="tour-item-rate">
+                            <p class="tour-item-day">2 Day</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9</p>
+                            <p>(1000+)</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Location:</div>
+                         <p>Quang Ninh</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Level:</div>
+                         <p>Easier to Moderate</p>
+                    </div>
+                    <div class="tour-item-info">
+                        <div class="tour-item-info-title">Minimum Age:</div>
+                         <p>All Age</p>
+                    </div>
+                    <div class="tour-item-price">
+                        <div class="tour-item-price-title">
+                            <p>From</p>
+                            <h2>$100</h2>
+                        </div>
+                        <div class="tour-item-price-compare">
+                            COMPARE 
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="des-tour-item-container" style="visibility: hidden; height: 1px;" >
+            </div>
+        </div>
+        <div class="des-container-overview">
+            <div class="desc">
+                <h1>Northern's Overview</h1>
+                <div class="desc-content">
+                    <h5>Founded over 1000 years ago, Vietnam’s capital city is rich in history, with the streets of its rambling Old Quarter dating back to the 14th century. <br> <br> Wandering these tree-lined lanes past crumbling colonial facades will transport you back in time.   <br><br>However, today's Hanoi is about much more than the past. The ancient city is being invigorated with modern cafes, world-class restaurants, and cool art galleries.  <br><br> When the sun goes down, you have your pick of watering holes, from sophisticated rooftop bars to buzzing bia hơi. If you're traveling to Hanoi for the first time, these are experiences you must try at least once in your life.  <br> <br>From ancient temples to buzzing markets, Hanoi's got it all. It's basically the cultural heartbeat of Vietnam. </h5>
+                    <img src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/01/hinh-nen-Ha-Noi.jpg" alt="">
+                </div>
+                <hr>
+                <h3 class="top-thing"><strong>Top thing to do in the North</strong></h3>                       
+                <p><strong>Sample the street food</strong></p>
+                <p>"For an authentic taste of the North, look to the street kitchens of the Old Quarter. Steaming pots of its star anise-infused Phở broth simmer on every corner; while every day, the scent of bún chả fills the air as barbecued pork sizzles over hot coals."</p>
+                <p><strong>Stroll the Old Quarter </strong></p>
+                <p>the North’s Old Quarter serves up a sensory overload. Wisps of incense drift out onto streets from ancient temples, while the clang of blacksmiths’ hammers mingles with mobile fruit sellers’ call. Jump in a cyclo and tour this intoxicating maze.</p>
+                <p><strong>Explore the North's cafe culture</strong></p>
+                <p>Fast-paced on the surface, the true rhythm of the North life is far from hurried and is reflected well in its leisurely coffee hours. Alongside traditional coffee houses, an ever-growing band of unique cafes serve new brews in cool caffeine dens.</p>
+                <hr>    
+            </div>  
+            <div class="desc" id="When-to-go">
+                <h6 class="titile">Northern Weather</h6>
+                <p>Northern is most inviting from April to June, but the capital is particularly beautiful in May when trees suddenly come into bloom. September and October are also excellent months to visit as temperatures cool and the sky clears.</p>
+            </div>
+            <div class="desc" id="how-to-get-there">
+                <h6 class="titile"> Northern Transport </h6>
+                <p>Vietnam’s capital is served by Noi Bai international airport, 45km from the city centre. The Reunification Express line has trains to many major destinations including Lao Cai (Sapa) and Dong Hoi (Phong Nha.) There are many options for getting around Hanoi, including taxis, buses, and motorbikes. Grab, and a few other ride-hailing apps offer on-demand services for getting around. Hanoi’s bus network has an extensive network around the city and low-cost fare. Finally, the classic cyclo can be hired to take you around the Old Quarter on a sightseeing tour.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container pd-32">
+        <div class="footer-media footer-item">
+            <img src="assest/img/logo-white.png" alt="">
+            <div class="footer-media-item">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <a class="contact-link" href="contact.html">CONTACT US</a>
+        </div>
+        <div class="footer-link footer-item">
+            <h3>QUICK LINKS</h3>
+            <a href="adventure.html">Adventures</a>
+            <a href="">Countries</a>
+            <a href="">Hotels</a>
+            <a href="about.html">About us</a>
+            <a href="blog.html">Blog</a>
+            <a href="destination.html">Dome tours</a>
+        </div>
+        <div class="footer-address footer-item">
+            <h3>ADDRESS</h3>
+            <p><i class="fa-solid fa-phone"></i>+84 923 123</p>
+            <p><i class="fa-solid fa-envelope"></i>2pm&@gm.uit.edu.vn</p>
+            <p><i class="fa-solid fa-home"></i>12/0 Duong So 1, Go Vap</p>
+            <img src="https://remarkable-jelly-df2aaa.netlify.app/assest/img/da-thong-bao-bo-cong-thuong.png" alt="">
+        </div>
+        <div class="footer-email footer-item">
+            <h3>GET EMAIL UPDATES</h3>
+            <p>Sign up today for monthly giveaways, engaging stories & videos, special offers & more!</p>
+            <input type="email" placeholder="email@examples.com">
+            <button>GET NEWSLETTER</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-items-container li').hover(function(){
+                $(this).children('.sub-nav').stop().slideDown(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            },function(){
+                $(this).children('.sub-nav').stop().slideUp(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            }
+            )
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script>
+        document.getElementById('panorama-img').onload = function() {
+            pannellum.viewer('panorama', {
+                "type": "equirectangular",
+                "panorama": this.src,
+                "autoLoad": true
+            });
+        };
+    </script>    
+ <div>  
+</body>
+</html>

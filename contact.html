@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2PM&</title>
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="/script.js">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link rel="icon" href="/assest/img/icon.png">
+    <link rel="stylesheet" href="assest/contact.css">
+</head>
+<body>
+    <div id="main">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="/assest/img/logo-black.png"></a>
+            <ul class="nav-items-container">
+                <li><a href="#" class="nav-item">EXPLORE</a>
+                    <ul class="sub-nav">
+                        <li><a href="#" class="sub-nav-item">Hotel</a></li>
+                        <li><a href="#" class="sub-nav-item">Road Trips</a></li>
+                        <li><a href="adventure.html" class="sub-nav-item">Adventures<i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#" class="sub-nav-item">Kayaking</a></li>
+                                <li><a href="activities.html" class="sub-nav-item">Whitewater Rafting</a></li>
+                                <li><a href="#" class="sub-nav-item">Camping</a></li>
+                                <li><a href="#" class="sub-nav-item">Multi-Sport</a></li>
+                                <li><a href="#" class="sub-nav-item">Rowing</a></li>
+                               <li><a href="#" class="sub-nav-item">Hiking</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="sub-nav-item">Cities</a></li>
+                        <li><a href="#" class="sub-nav-item">Scenery</a></li>
+                        <li><a href="tours.html" class="sub-nav-item">+ All tour</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-item">DESTINATIONS</i></a>
+                    <ul class="sub-nav">
+                        <li><a href="destination.html" class="sub-nav-item">Vietnam</a></li>
+                        <li><a href="#" class="sub-nav-item">World<i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#" class="sub-nav-item">Indonesia</a></li>
+                                <li><a href="#" class="sub-nav-item">Singapore</a></li>
+                                <li><a href="#" class="sub-nav-item">Japan</a></li>
+                                <li><a href="#" class="sub-nav-item">China</a></li>
+                                <li><a href="#" class="sub-nav-item">Korea</a></li>
+                                <li><a href="#" class="sub-nav-item">Thailand</a></li>
+                                <li><a href="#" class="sub-nav-item">France</a></li>
+                                <li><a href="#" class="sub-nav-item">Italy</a></li>
+                                <li><a href="#" class="sub-nav-item">Cuba</a></li>
+                                <li><a href="#" class="sub-nav-item">USA</a></li>
+                                <li><a href="#" class="sub-nav-item">+ All Country</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="blog.html" class="nav-item">BLOG</a></li>
+                <li><a href="about.html" class="nav-item">ABOUT</a></li>
+                <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+            </ul>
+    
+            <div class="nav-media">
+                <a class="nav-media-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="nav-media-item" href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a class="nav-media-item" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a class="nav-media-item" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a class="nav-media-item" href="https://x.com/"><i class="fa-brands fa-tiktok"></i></a>
+                <label class="nav-media-item" for="checkbox-login"><i class="fa-solid fa-user"></i></label>
+                <input type="checkbox" id="checkbox-login" style="display: none;">
+                <label class="login-container" for="checkbox-login">
+                    <label class="login-close" for="checkbox-login"><i class="fa-solid fa-xmark"></i></label>
+                    <div class="login-area" onclick="stopPropagation(event)">
+                        <h1>Log in</h1>
+                        <p>Enter your email to log in</p>
+                        <div class="login-form">
+                            <div class="login-input">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="login-input">
+                                <i class="fa-solid fa-lock"></i>
+                                <input style="width: 80%;" type="password" name="password" placeholder="Password">
+                                <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                            </div>
+                            <button>Log in with email</button>
+                        </div>
+                        <div class="login-google">
+                            <div class="login-line-divide">
+                                <span>or continue with:</span>
+                            </div>
+                            <button class="login-google-button">
+                                <img src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png" alt="">
+                                Google
+                            </button>
+                        </div>
+                        <div class="login-tele">
+                            <p>Don't have an account?</p>
+                            <a onclick="goToSign()">Sign up</a>
+                        </div>
+                        <div class="login-tele">
+                            <p>By clicking continue, you agree to our</p>
+                            <a href="#">Terms of Service</a>
+                            <p>and</p>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="contact-page">
+            <div class="contact-slide">
+                <div class="contact-slide-img"><img src="https://www.oars.com/wp-content/uploads/2023/04/jumping-into-river-contact-us-e1684173595329-2048x1366.jpg" alt=""></div>
+                <div class="contact-slide-overlay"></div>
+                <div class="contact-slide-content">
+                    <h1>contact</h1>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <div class="contact-info">
+                    <h3>GET IN TOUCH WITH 2PM&</h3>
+                    <p>If you have an inquiry or would like more information about any of our tours, please use the contact form below! We will get back to you within 24 hours.
+                        <br>
+                        <br>
+                        If you do not hear back from us within 24 hours, please check your Spam folder.
+                    </p>
+                    <p class="contact-info-line"><i class="fa-solid fa-arrow-right"></i></p>
+                    <h3>ADDRESS</h3>
+                    <p><i class="fa-solid fa-phone"></i>+84 923 123</p>
+                    <p><i class="fa-solid fa-envelope"></i>2pm&@gm.uit.edu.vn</p>
+                    <p><i class="fa-solid fa-home"></i>12/0 Duong So 1, Go Vap</p>
+                </div>
+                <div class="contact-form">
+                    <h1>Contact Form</h1>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.com" >
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Your country</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Where you want to go?</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Enter your questions or message" ></textarea>
+                    </div>
+                    <div class="button-container">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container pd-32">
+            <div class="footer-media footer-item">
+                <img src="assest/img/logo-white.png" alt="">
+                <div class="footer-media-item">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a class="contact-link" href="contact.html">CONTACT US</a>
+            </div>
+            <div class="footer-link footer-item">
+                <h3>QUICK LINKS</h3>
+                <a href="adventure.html">Adventures</a>
+                <a href="">Countries</a>
+                <a href="">Hotels</a>
+                <a href="about.html">About us</a>
+                <a href="blog.html">Blog</a>
+                <a href="destination.html">Dome tours</a>
+            </div>
+            <div class="footer-address footer-item">
+                <h3>ADDRESS</h3>
+                <p><i class="fa-solid fa-phone"></i>+84 923 123</p>
+                <p><i class="fa-solid fa-envelope"></i>2pm&@gm.uit.edu.vn</p>
+                <p><i class="fa-solid fa-home"></i>12/0 Duong So 1, Go Vap</p>
+                <img src="https://remarkable-jelly-df2aaa.netlify.app/assest/img/da-thong-bao-bo-cong-thuong.png" alt="">
+            </div>
+            <div class="footer-email footer-item">
+                <h3>GET EMAIL UPDATES</h3>
+                <p>Sign up today for monthly giveaways, engaging stories & videos, special offers & more!</p>
+                <input type="email" placeholder="email@examples.com">
+                <button>GET NEWSLETTER</button>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-items-container li').hover(function(){
+                $(this).children('.sub-nav').stop().slideDown(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            },function(){
+                $(this).children('.sub-nav').stop().slideUp(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            }
+            )
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.nav-container{
+    height: 65px !important;
+    box-shadow: 0px 1px 4px #888888 !important;
+    background-color: #ffff !important;
+}
+.nav-item,
+.nav-media-item{
+    color: #000 !important;
+}   
+.adventure-page{
+    margin-top: 65px;
+    width: 100%;
+}
+.adventure-slide{
+    width: 100%;
+    position: relative;
+}
+.adventure-slide > img{
+    width: 100%;
+}
+.adventure-slide > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    color: #fff;
+    font-weight: 600;
+    font-style: italic;
+}
+.adventure-items{
+    width: 100%;
+}
+.adventure-blog{
+    width: 100%;
+    padding: 32px;
+}
+.adventure-blog > p{
+    text-align: justify;
+    font-size: 16px;
+    color: #888888;
+    margin-top: 16px;
+}
+.adventure-title{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cf3339;
+    padding: 0 32px;
+}
+.line{
+    height: 2px;
+    width: 40%;
+    background-color: #cf3339;
+}
+.adventure-all{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 32px;
+    justify-content: space-between;
+}
+.adventure-all-container{
+    width: 32%;
+    height: 360px;
+    position: relative;
+    margin: 16px 0;
+}
+.adventure-all-container > img{
+    width: 100%;
+    height: 100%;
+}
+.adventure-all-title{
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition:ease-in-out 1s;
+}
+.adventure-all-container:hover .adventure-all-title{
+    top: 0;
+    font-style: italic;
+}
+.adventure-page-footer{
+    width: 100%;
+}
+.adventure-page-footer > img{
+    width: 100%;
+}

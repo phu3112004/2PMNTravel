@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2PM&</title>
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="/script.js">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link rel="icon" href="/assest/img/icon.png">
+    <link rel="stylesheet" href="assest/tours.css">
+</head>
+<body>
+    <div id="main">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="/assest/img/logo-black.png"></a>
+            <ul class="nav-items-container">
+                <li><a href="#" class="nav-item">EXPLORE</a>
+                    <ul class="sub-nav">
+                        <li><a href="#" class="sub-nav-item">Hotel</a></li>
+                        <li><a href="#" class="sub-nav-item">Road Trips</a></li>
+                        <li><a href="adventure.html" class="sub-nav-item">Adventures<i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#" class="sub-nav-item">Kayaking</a></li>
+                                <li><a href="activities.html" class="sub-nav-item">Whitewater Rafting</a></li>
+                                <li><a href="#" class="sub-nav-item">Camping</a></li>
+                                <li><a href="#" class="sub-nav-item">Multi-Sport</a></li>
+                                <li><a href="#" class="sub-nav-item">Rowing</a></li>
+                               <li><a href="#" class="sub-nav-item">Hiking</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="sub-nav-item">Cities</a></li>
+                        <li><a href="#" class="sub-nav-item">Scenery</a></li>
+                        <li><a href="tours.html" class="sub-nav-item">+ All tour</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-item">DESTINATIONS</i></a>
+                    <ul class="sub-nav">
+                        <li><a href="destination.html" class="sub-nav-item">Vietnam</a></li>
+                        <li><a href="#" class="sub-nav-item">World<i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#" class="sub-nav-item">Indonesia</a></li>
+                                <li><a href="#" class="sub-nav-item">Singapore</a></li>
+                                <li><a href="#" class="sub-nav-item">Japan</a></li>
+                                <li><a href="#" class="sub-nav-item">China</a></li>
+                                <li><a href="#" class="sub-nav-item">Korea</a></li>
+                                <li><a href="#" class="sub-nav-item">Thailand</a></li>
+                                <li><a href="#" class="sub-nav-item">France</a></li>
+                                <li><a href="#" class="sub-nav-item">Italy</a></li>
+                                <li><a href="#" class="sub-nav-item">Cuba</a></li>
+                                <li><a href="#" class="sub-nav-item">USA</a></li>
+                                <li><a href="#" class="sub-nav-item">+ All Country</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="blog.html" class="nav-item">BLOG</a></li>
+                <li><a href="about.html" class="nav-item">ABOUT</a></li>
+                <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+            </ul>
+    
+            <div class="nav-media">
+                <a class="nav-media-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="nav-media-item" href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a class="nav-media-item" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a class="nav-media-item" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a class="nav-media-item" href="https://x.com/"><i class="fa-brands fa-tiktok"></i></a>
+                <label class="nav-media-item" for="checkbox-login"><i class="fa-solid fa-user"></i></label>
+                <input type="checkbox" id="checkbox-login" style="display: none;">
+                <label class="login-container" for="checkbox-login">
+                    <label class="login-close" for="checkbox-login"><i class="fa-solid fa-xmark"></i></label>
+                    <div class="login-area" onclick="stopPropagation(event)">
+                        <h1>Log in</h1>
+                        <p>Enter your email to log in</p>
+                        <div class="login-form">
+                            <div class="login-input">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="login-input">
+                                <i class="fa-solid fa-lock"></i>
+                                <input style="width: 80%;" type="password" name="password" placeholder="Password">
+                                <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                            </div>
+                            <button>Log in with email</button>
+                        </div>
+                        <div class="login-google">
+                            <div class="login-line-divide">
+                                <span>or continue with:</span>
+                            </div>
+                            <button class="login-google-button">
+                                <img src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png" alt="">
+                                Google
+                            </button>
+                        </div>
+                        <div class="login-tele">
+                            <p>Don't have an account?</p>
+                            <a onclick="goToSign()">Sign up</a>
+                        </div>
+                        <div class="login-tele">
+                            <p>By clicking continue, you agree to our</p>
+                            <a href="#">Terms of Service</a>
+                            <p>and</p>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="tours-page">
+            <div class="tours-filter-container">
+                <button class="tours-filter-clearall" onclick="clearAll()">Clear All</button>
+                <button class="tours-filter-header" onclick="toggleDropdown('months', this)">MONTHS<i class="fa-solid fa-chevron-down"></i></button>
+                <div id="months" class="tours-filter-content">
+                    <input type="checkbox" id="all-months" onclick="toggleAllCheckbox(this, 'months')">
+                    <label for="all-months">All</label><br>
+                    <input type="checkbox" id="january">
+                    <label for="january">January</label><br>
+                    <input type="checkbox" id="february">
+                    <label for="february">February</label><br>
+                    <input type="checkbox" id="march">
+                    <label for="march">March</label><br>
+                    <input type="checkbox" id="april">
+                    <label for="april">April</label><br>
+                    <input type="checkbox" id="may">
+                    <label for="may">May</label><br>
+                    <input type="checkbox" id="june">
+                    <label for="june">June</label><br>
+                    <input type="checkbox" id="july">
+                    <label for="july">July</label><br>
+                    <input type="checkbox" id="august">
+                    <label for="august">August</label><br>
+                    <input type="checkbox" id="september">
+                    <label for="september">September</label><br>
+                    <input type="checkbox" id="october">
+                    <label for="october">October</label><br>
+                    <input type="checkbox" id="november">
+                    <label for="november">November</label><br>
+                    <input type="checkbox" id="december">
+                    <label for="december">December</label>
+                </div>
+        
+                <button class="tours-filter-header" onclick="toggleDropdown('trip-length', this)">TRIP LENGTH <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="trip-length" class="tours-filter-content">
+                    <input type="checkbox" id="all-length"  onclick="toggleAllCheckbox(this, 'trip-length')">
+                    <label for="all-length">All</label><br>
+                    <input type="checkbox" id="half-day">
+                    <label for="half-day">1/2 Day or 1 Day</label><br>
+                    <input type="checkbox" id="2-3-days">
+                    <label for="2-3-days">2-3 Days</label><br>
+                    <input type="checkbox" id="4-7-days">
+                    <label for="4-7-days">4-7 Days</label><br>
+                    <input type="checkbox" id="8-days">
+                    <label for="8-days">8+ Days</label>
+                </div>
+        
+                <button class="tours-filter-header" onclick="toggleDropdown('destinations', this)">DESTINATIONS <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="destinations" class="tours-filter-content">
+                    <input type="checkbox" id="all-destinations" onclick="toggleAllCheckbox(this, 'destinations')">
+                    <label for="all-destinations">All</label><br>
+                    <input type="checkbox" id="argentina">
+                    <label for="argentina">Argentina</label><br>
+                    <input type="checkbox" id="australia">
+                    <label for="australia">Australia</label><br>
+                    <input type="checkbox" id="brazil">
+                    <label for="brazil">Brazil</label><br>
+                    <input type="checkbox" id="canada">
+                    <label for="canada">Canada</label><br>
+                    <input type="checkbox" id="cambodia">
+                    <label for="cambodia">Cambodia</label><br>
+                    <input type="checkbox" id="chile">
+                    <label for="chile">Chile</label><br>
+                    <input type="checkbox" id="china">
+                    <label for="china">China</label><br>
+                    <input type="checkbox" id="egypt">
+                    <label for="egypt">Egypt</label><br>
+                    <input type="checkbox" id="france">
+                    <label for="france">France</label><br>
+                    <input type="checkbox" id="germany">
+                    <label for="germany">Germany</label><br>
+                    <input type="checkbox" id="hongkong">
+                    <label for="hongkong">Hong Kong</label><br>
+                    <input type="checkbox" id="india">
+                    <label for="india">India</label><br>
+                    <input type="checkbox" id="italy">
+                    <label for="italy">Italy</label><br>
+                    <input type="checkbox" id="japan">
+                    <label for="japan">Japan</label><br>
+                    <input type="checkbox" id="korea">
+                    <label for="korea">Korea</label><br>
+                    <input type="checkbox" id="laos">
+                    <label for="laos">Laos</label><br>
+                    <input type="checkbox" id="mongolia">
+                    <label for="mongolia">Mongolia</label><br>
+                    <input type="checkbox" id="malaysia">
+                    <label for="malaysia">Malaysia</label><br>
+                    <input type="checkbox" id="mexico">
+                    <label for="mexico">Mexico</label><br>
+                    <input type="checkbox" id="nepal">
+                    <label for="nepal">Nepal</label><br>
+                    <input type="checkbox" id="new-zealand">
+                    <label for="new-zealand">New Zealand</label><br>
+                    <input type="checkbox" id="peru">
+                    <label for="peru">Peru</label><br>
+                    <input type="checkbox" id="philippines">
+                    <label for="philippines">Philippines</label><br>
+                    <input type="checkbox" id="singapore">
+                    <label for="singapore">Singapore</label><br>
+                    <input type="checkbox" id="south-africa">
+                    <label for="south-africa">South Africa</label><br>
+                    <input type="checkbox" id="taiwan">
+                    <label for="taiwan">Taiwan</label><br>
+                    <input type="checkbox" id="thailand">
+                    <label for="thailand">Thailand</label><br>
+                    <input type="checkbox" id="united-states">
+                    <label for="united-states">United States</label><br>
+                    <input type="checkbox" id="united-kingdom">
+                    <label for="united-kingdom">United Kingdom</label><br>
+                    <input type="checkbox" id="vietnam">
+                    <label for="vietnam">Vietnam</label><br>
+                </div>
+        
+                <button class="tours-filter-header" onclick="toggleDropdown('activities', this)">ACTIVITIES <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="activities" class="tours-filter-content">
+                    <input type="checkbox" id="all-activities" onclick="toggleAllCheckbox(this, 'activity')">
+                    <label for="all-activities">All</label><br>
+                    <input type="checkbox" id="dory-trips">
+                    <label for="dory-trips">Dory Trips</label><br>
+                    <input type="checkbox" id="hiking">
+                    <label for="hiking">Hiking</label><br>
+                    <input type="checkbox" id="multi-sport">
+                    <label for="multi-sport">Multi-Sport</label><br>
+                    <input type="checkbox" id="rowing-clinics">
+                    <label for="rowing-clinics">Rowing Clinics</label><br>
+                    <input type="checkbox" id="sea-kayaking">
+                    <label for="sea-kayaking">Sea Kayaking</label><br>
+                    <input type="checkbox" id="whitewater-guide-school">
+                    <label for="whitewater-guide-school">Whitewater Guide School</label><br>
+                    <input type="checkbox" id="whitewater-rafting">
+                    <label for="whitewater-rafting">Whitewater Rafting</label>
+                </div>
+        
+                <button class="tours-filter-header" onclick="toggleDropdown('adventure-level', this)">ADVENTURE LEVEL <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="adventure-level" class="tours-filter-content">
+                    <input type="checkbox" id="all-levels" onclick="toggleAllCheckbox(this, 'adventure-level')">
+                    <label for="all-levels">All</label><br>
+                    <input type="checkbox" id="easier">
+                    <label for="easier">Easier</label><br>
+                    <input type="checkbox" id="easier-to-moderate">
+                    <label for="easier-to-moderate">Easier to Moderate</label><br>
+                    <input type="checkbox" id="moderate">
+                    <label for="moderate">Moderate</label><br>
+                    <input type="checkbox" id="moderately-challenging">
+                    <label for="moderately-challenging">Moderately Challenging</label><br>
+                    <input type="checkbox" id="challenging">
+                    <label for="challenging">Challenging</label>
+                </div>
+        
+                <button class="tours-filter-header" onclick="toggleDropdown('minimum-age', this)">MINIMUM AGE <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="minimum-age" class="tours-filter-content">
+                    <input type="checkbox" id="all-ages" onclick="toggleAllCheckbox(this, 'minimum-age')">
+                    <label for="all-ages">All</label><br>
+                    <input type="checkbox" id="6-under">
+                    <label for="6-under">6 & Under</label><br>
+                    <input type="checkbox" id="8-under">
+                    <label for="8-under">8 & Under</label><br>
+                    <input type="checkbox" id="10-under">
+                    <label for="10-under">10 & Under</label><br>
+                    <input type="checkbox" id="12-under">
+                    <label for="12-under">12 & Under</label><br>
+                    <input type="checkbox" id="14-under">
+                    <label for="14-under">14 & Under</label><br>
+                    <input type="checkbox" id="16-under">
+                    <label for="16-under">16 & Under</label>
+                </div>
+        
+                <button class="tours-filter-header" onclick="toggleDropdown('price-range', this)">PRICE RANGE <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="price-range" class="tours-filter-content">
+                    <input type="checkbox" id="all-prices" onclick="toggleAllCheckbox(this, 'price-range')">
+                    <label for="all-prices">All</label><br>
+                    <input type="checkbox" id="under-750">
+                    <label for="under-750">< $750</label><br>
+                    <input type="checkbox" id="750-1499">
+                    <label for="750-1499">$750 - $1499</label><br>
+                    <input type="checkbox" id="1500-2499">
+                    <label for="1500-2499">$1500 - $2499</label><br>
+                    <input type="checkbox" id="2500-4999">
+                    <label for="2500-4999">$2500 - $4999</label><br>
+                    <input type="checkbox" id="5000-plus">
+                    <label for="5000-plus">$5000+</label>
+                </div>
+            </div>
+            <div class="tours-all">
+                <div class="tours-all-sort">
+                    <p>Showing <b>8 of 95</b> trips</p>
+                    <select name="" id="tours-all-sort-select">
+                        <option value="">Sort</option>
+                        <option value="">Price: Low to high</option>
+                        <option value="">Price: High to low</option>
+                        <option value="">Alphabet: A to Z</option>
+                        <option value="">Alphabet: Z to A</option>
+                        <option value="">Customer Rating</option>
+                    </select>
+                </div>
+                <div class="tours-all-area">
+                    <div class="tours-all-tour-item-container">
+                        <div class="tour-item-img">
+                            <img src="https://www.oars.com/wp-content/uploads/2015/12/LOD-featured-410x232.webp" alt="">
+                        </div>
+                        <div class="tour-item-content">
+                            <p class="tour-item-tag">KAYAKING</p>
+                            <a href="#" class="tour-item-title">Sunset Kayak Adventure on Crystal Lake</a>
+                            <div class="tour-item-rate">
+                                <p class="tour-item-day">3 Days</p>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.8</p>
+                                <p>(90)</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Location:</div>
+                                <p>Utah</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Level:</div>
+                                <p>Moderate</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Minimum Age:</div>
+                                <p>12</p>
+                            </div>
+                            <div class="tour-item-price">
+                                <div class="tour-item-price-title">
+                                    <p>From</p>
+                                    <h2>$220</h2>
+                                </div>
+                                <div class="tour-item-price-compare">
+                                    COMPARE 
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tours-all-tour-item-container">
+                        <div class="tour-item-img">
+                            <img src="https://www.oars.com/wp-content/uploads/2015/12/SFA1D-featured-410x232.webp" alt="">
+                        </div>
+                        <div class="tour-item-content">
+                            <p class="tour-item-tag">MULTI-SPORT</p>
+                            <a href="#" class="tour-item-title">Rock Climbing and Rafting in Yosemite</a>
+                            <div class="tour-item-rate">
+                                <p class="tour-item-day">5 Days</p>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.7</p>
+                                <p>(85)</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Location:</div>
+                                <p>California</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Level:</div>
+                                <p>Moderately Challenging</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Minimum Age:</div>
+                                <p>14</p>
+                            </div>
+                            <div class="tour-item-price">
+                                <div class="tour-item-price-title">
+                                    <p>From</p>
+                                    <h2>$450</h2>
+                                </div>
+                                <div class="tour-item-price-compare">
+                                    COMPARE 
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tours-all-tour-item-container">
+                        <div class="tour-item-img">
+                            <img src="https://www.oars.com/wp-content/uploads/2015/12/CAT-featured-410x232.webp" alt="">
+                        </div>
+                        <div class="tour-item-content">
+                            <p class="tour-item-tag">CAMPING</p>
+                            <a href="#" class="tour-item-title">Family Camping and Rafting on the Rogue River</a>
+                            <div class="tour-item-rate">
+                                <p class="tour-item-day">4 Days</p>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.9</p>
+                                <p>(120)</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Location:</div>
+                                <p>Oregon</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Level:</div>
+                                <p>Easier</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Minimum Age:</div>
+                                <p>8</p>
+                            </div>
+                            <div class="tour-item-price">
+                                <div class="tour-item-price-title">
+                                    <p>From</p>
+                                    <h2>$300</h2>
+                                </div>
+                                <div class="tour-item-price-compare">
+                                    COMPARE 
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tours-all-tour-item-container">
+                        <div class="tour-item-img">
+                            <img src="https://www.oars.com/wp-content/uploads/2022/09/ROG-1HERO1-LG-410x232.webp" alt="">
+                        </div>
+                        <div class="tour-item-content">
+                            <p class="tour-item-tag">ROWING</p>
+                            <a href="#" class="tour-item-title">Rowing the Salmon River Canyons</a>
+                            <div class="tour-item-rate">
+                                <p class="tour-item-day">6 Days</p>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.8</p>
+                                <p>(100)</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Location:</div>
+                                <p>Idaho</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Level:</div>
+                                <p>Challenging</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Minimum Age:</div>
+                                <p>16</p>
+                            </div>
+                            <div class="tour-item-price">
+                                <div class="tour-item-price-title">
+                                    <p>From</p>
+                                    <h2>$600</h2>
+                                </div>
+                                <div class="tour-item-price-compare">
+                                    COMPARE 
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="tours-all-tour-item-container">
+                        <div class="tour-item-img">
+                            <img src="https://www.oars.com/wp-content/uploads/2022/10/LowerCanyon-featured-410x232.webp" alt="">
+                        </div>
+                        <div class="tour-item-content">
+                            <p class="tour-item-tag">KAYAKING</p>
+                            <a href="#" class="tour-item-title">Kayaking the Lower Canyon of the Grand Canyon</a>
+                            <div class="tour-item-rate">
+                                <p class="tour-item-day">7 Days</p>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.9</p>
+                                <p>(150)</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Location:</div>
+                                <p>Arizona</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Level:</div>
+                                <p>Moderate</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Minimum Age:</div>
+                                <p>10</p>
+                            </div>
+                            <div class="tour-item-price">
+                                <div class="tour-item-price-title">
+                                    <p>From</p>
+                                    <h2>$550</h2>
+                                </div>
+                                <div class="tour-item-price-compare">
+                                    COMPARE 
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tours-all-tour-item-container">
+                        <div class="tour-item-img">
+                            <img src="https://www.oars.com/wp-content/uploads/2015/12/Middle-Fork-Salmon-featured-410x232.webp" alt="">
+                        </div>
+                        <div class="tour-item-content">
+                            <p class="tour-item-tag">CAMPING</p>
+                            <a href="#" class="tour-item-title">Camping and Hiking the Sierra Nevada</a>
+                            <div class="tour-item-rate">
+                                <p class="tour-item-day">3 Days</p>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.7</p>
+                                <p>(110)</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Location:</div>
+                                <p>California</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Level:</div>
+                                <p>Easier to Moderate</p>
+                            </div>
+                            <div class="tour-item-info">
+                                <div class="tour-item-info-title">Minimum Age:</div>
+                                <p>10</p>
+                            </div>
+                            <div class="tour-item-price">
+                                <div class="tour-item-price-title">
+                                    <p>From</p>
+                                    <h2>$250</h2>
+                                </div>
+                                <div class="tour-item-price-compare">
+                                    COMPARE 
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tours-all-load-more">
+                    <button>Load more</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container pd-32">
+            <div class="footer-media footer-item">
+                <img src="assest/img/logo-white.png" alt="">
+                <div class="footer-media-item">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a class="contact-link" href="contact.html">CONTACT US</a>
+            </div>
+            <div class="footer-link footer-item">
+                <h3>QUICK LINKS</h3>
+                <a href="adventure.html">Adventures</a>
+                <a href="">Countries</a>
+                <a href="">Hotels</a>
+                <a href="about.html">About us</a>
+                <a href="blog.html">Blog</a>
+                <a href="destination.html">Dome tours</a>
+            </div>
+            <div class="footer-address footer-item">
+                <h3>ADDRESS</h3>
+                <p><i class="fa-solid fa-phone"></i>+84 923 123</p>
+                <p><i class="fa-solid fa-envelope"></i>2pm&@gm.uit.edu.vn</p>
+                <p><i class="fa-solid fa-home"></i>12/0 Duong So 1, Go Vap</p>
+                <img src="https://remarkable-jelly-df2aaa.netlify.app/assest/img/da-thong-bao-bo-cong-thuong.png" alt="">
+            </div>
+            <div class="footer-email footer-item">
+                <h3>GET EMAIL UPDATES</h3>
+                <p>Sign up today for monthly giveaways, engaging stories & videos, special offers & more!</p>
+                <input type="email" placeholder="email@examples.com">
+                <button>GET NEWSLETTER</button>
+            </div>
+        </div>
+    </div>
+    <script src="assest/blog.js"></script>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-items-container li').hover(function(){
+                $(this).children('.sub-nav').stop().slideDown(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            },function(){
+                $(this).children('.sub-nav').stop().slideUp(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            }
+            )
+        })
+
+
+        function toggleDropdown(id, button) {
+            var content = document.getElementById(id);
+            var icon = button.querySelector('i');
+            
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                icon.classList.remove('fa-chevron-up'); 
+                icon.classList.add('fa-chevron-down'); 
+                button.style.borderBottom = "1px #bdbdbd solid";
+                content.style.borderBottom = "none";
+            } else {
+                content.style.display = "block";
+                icon.classList.remove('fa-chevron-down'); 
+                icon.classList.add('fa-chevron-up'); 
+                button.style.borderBottom = "none";
+                content.style.borderBottom = "1px #bdbdbd solid";
+            }
+        }
+        function toggleAllCheckbox(checkbox, id){
+            var contain = document.getElementById(id);
+            var items = contain.querySelectorAll('input');
+            if(checkbox.checked){
+                items.forEach(item=> {
+                    item.checked = true;
+                });
+            }
+            else{
+                items.forEach(item=> {
+                    item.checked = false;
+                });
+            }
+        }
+    </script>
+    <script>
+        function clearAll() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                checkbox.checked = false;
+            });
+        }
+    </script>
+    
+</body>
+</html>

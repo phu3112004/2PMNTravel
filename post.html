@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2PM&</title>
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="/script.js">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link rel="icon" href="/assest/img/icon.png">
+    <link rel="stylesheet" href="assest/post.css">
+</head>
+<body>
+    <div id="main">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="/assest/img/logo-black.png"></a>
+            <ul class="nav-items-container">
+                <li><a href="#" class="nav-item">EXPLORE</a>
+                    <ul class="sub-nav">
+                        <li><a href="#" class="sub-nav-item">Hotel</a></li>
+                        <li><a href="#" class="sub-nav-item">Road Trips</a></li>
+                        <li><a href="adventure.html" class="sub-nav-item">Adventures<i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#" class="sub-nav-item">Kayaking</a></li>
+                                <li><a href="activities.html" class="sub-nav-item">Whitewater Rafting</a></li>
+                                <li><a href="#" class="sub-nav-item">Camping</a></li>
+                                <li><a href="#" class="sub-nav-item">Multi-Sport</a></li>
+                                <li><a href="#" class="sub-nav-item">Rowing</a></li>
+                               <li><a href="#" class="sub-nav-item">Hiking</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="sub-nav-item">Cities</a></li>
+                        <li><a href="#" class="sub-nav-item">Scenery</a></li>
+                        <li><a href="tours.html" class="sub-nav-item">+ All tour</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-item">DESTINATIONS</i></a>
+                    <ul class="sub-nav">
+                        <li><a href="destination.html" class="sub-nav-item">Vietnam</a></li>
+                        <li><a href="#" class="sub-nav-item">World<i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#" class="sub-nav-item">Indonesia</a></li>
+                                <li><a href="#" class="sub-nav-item">Singapore</a></li>
+                                <li><a href="#" class="sub-nav-item">Japan</a></li>
+                                <li><a href="#" class="sub-nav-item">China</a></li>
+                                <li><a href="#" class="sub-nav-item">Korea</a></li>
+                                <li><a href="#" class="sub-nav-item">Thailand</a></li>
+                                <li><a href="#" class="sub-nav-item">France</a></li>
+                                <li><a href="#" class="sub-nav-item">Italy</a></li>
+                                <li><a href="#" class="sub-nav-item">Cuba</a></li>
+                                <li><a href="#" class="sub-nav-item">USA</a></li>
+                                <li><a href="#" class="sub-nav-item">+ All Country</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="blog.html" class="nav-item">BLOG</a></li>
+                <li><a href="about.html" class="nav-item">ABOUT</a></li>
+                <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+            </ul>
+    
+            <div class="nav-media">
+                <a class="nav-media-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="nav-media-item" href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a class="nav-media-item" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a class="nav-media-item" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a class="nav-media-item" href="https://x.com/"><i class="fa-brands fa-tiktok"></i></a>
+                <label class="nav-media-item" for="checkbox-login"><i class="fa-solid fa-user"></i></label>
+                <input type="checkbox" id="checkbox-login" style="display: none;">
+                <label class="login-container" for="checkbox-login">
+                    <label class="login-close" for="checkbox-login"><i class="fa-solid fa-xmark"></i></label>
+                    <div class="login-area" onclick="stopPropagation(event)">
+                        <h1>Log in</h1>
+                        <p>Enter your email to log in</p>
+                        <div class="login-form">
+                            <div class="login-input">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="login-input">
+                                <i class="fa-solid fa-lock"></i>
+                                <input style="width: 80%;" type="password" name="password" placeholder="Password">
+                                <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                            </div>
+                            <button>Log in with email</button>
+                        </div>
+                        <div class="login-google">
+                            <div class="login-line-divide">
+                                <span>or continue with:</span>
+                            </div>
+                            <button class="login-google-button">
+                                <img src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png" alt="">
+                                Google
+                            </button>
+                        </div>
+                        <div class="login-tele">
+                            <p>Don't have an account?</p>
+                            <a onclick="goToSign()">Sign up</a>
+                        </div>
+                        <div class="login-tele">
+                            <p>By clicking continue, you agree to our</p>
+                            <a href="#">Terms of Service</a>
+                            <p>and</p>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="return-all-blogs">
+            <a href="blog.html">< The Blog</a>
+        </div>
+        <div class="post-page">
+            <div class="post-news">
+                <h1>What to Expect on a Multi-day River Trip</h1>
+                <p>By Armin at 24/04/2024</p>
+                <p class="post-news-content">How do I pack my gear? What type of boats can I expect on my rafting trip? What does a typical day on the river look like? Where do we camp?
+                    <br><br>Whether it’s your first time on a multi-day river trip or you’ve been on an overnight rafting trip, but maybe not with OARS, you’ll likely have some questions about what to expect. Our Multi-day Rafting 101 video sets out to answer many of the most common questions about multi-day river trips whether you’re headed out on a short and sweet 2-night adventure on the <a style="color: #cf3339;" href="#">Tuolumne River</a> or a two-week <a style="color: #cf3339;" href="#">Grand Canyon rafting</a> expedition.
+                </p>
+                <iframe width="100%" height="480px" src="https://www.youtube.com/embed/-NJFMVBtUHk?si=R_kYDg8JJHu7qB-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="post-news-rcm">
+                <h2>Related blog</h2>
+                <a href="#" class="post-news-rcm-item">
+                    <img src="https://www.oars.com/wp-content/uploads/2023/05/james-kaiser-cataract-2015-128-410x232.jpg" alt="">
+                    <div class="post-news-rcm-title">
+                        <p>Cataract Canyon: A Bright Spot in the Colorado River Basin</p>
+                        <p>By Ackerman Mikasa at 24/04/2024</p>
+                    </div>
+                </a>
+                <a href="#" class="post-news-rcm-item">
+                    <img src="https://www.oars.com/wp-content/uploads/2023/12/Yampa_Jeff-Grate.jpg" alt="">
+                    <div class="post-news-rcm-title">
+                        <p>Why River Rafting Trips are the Best Way to Travel</p>
+                        <p>By Zeka at 24/04/2024</p>
+                    </div>
+                </a>
+                <a href="#" class="post-news-rcm-item">
+                    <img src="https://www.oars.com/wp-content/uploads/2023/04/canada-chilko-chilcotin-021-2-1680x900.jpeg" alt="">
+                    <div class="post-news-rcm-title">
+                        <p>10 of the World's Most Notorious Whitewater Rapids</p>
+                        <p>By Eren Yeager at 24/04/2024</p>
+                    </div>
+                </a>
+                <a href="#" class="post-news-rcm-item">
+                    <img src="https://www.oars.com/wp-content/uploads/2024/04/Oars-Middle-Fork-Salmon-37-2-1350x900.webp" alt="">
+                    <div class="post-news-rcm-title">
+                        <p>Middle Fork Salmon River Crowned Best in the West</p>
+                        <p>By Sasha at 24/04/2024</p>
+                    </div>
+                </a>
+                <a href="#" class="post-news-rcm-item">
+                    <img src="https://www.oars.com/wp-content/uploads/2022/10/LowerCanyon-featured-600x600.jpg" alt="">
+                    <div class="post-news-rcm-title">
+                        <p>Grand Canyon Rafting: Whitmore Wash to Pearce Ferry</p>
+                        <p>By Levi at 24/04/2024</p>
+                    </div>
+                </a>
+                <a href="#" class="post-news-rcm-item">
+                    <img src="https://www.oars.com/wp-content/uploads/2023/04/Colorado-River-2_web-1-410x232.jpg" alt="">
+                    <div class="post-news-rcm-title">
+                        <p>A Thirsty West: How Did We Get Here?</p>
+                        <p>By Ackerman Mikasa at 24/04/2024</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="footer-container pd-32">
+            <div class="footer-media footer-item">
+                <img src="assest/img/logo-white.png" alt="">
+                <div class="footer-media-item">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a class="contact-link" href="contact.html">CONTACT US</a>
+            </div>
+            <div class="footer-link footer-item">
+                <h3>QUICK LINKS</h3>
+                <a href="adventure.html">Adventures</a>
+                <a href="">Countries</a>
+                <a href="">Hotels</a>
+                <a href="about.html">About us</a>
+                <a href="blog.html">Blog</a>
+                <a href="destination.html">Dome tours</a>
+            </div>
+            <div class="footer-address footer-item">
+                <h3>ADDRESS</h3>
+                <p><i class="fa-solid fa-phone"></i>+84 923 123</p>
+                <p><i class="fa-solid fa-envelope"></i>2pm&@gm.uit.edu.vn</p>
+                <p><i class="fa-solid fa-home"></i>12/0 Duong So 1, Go Vap</p>
+                <img src="https://remarkable-jelly-df2aaa.netlify.app/assest/img/da-thong-bao-bo-cong-thuong.png" alt="">
+            </div>
+            <div class="footer-email footer-item">
+                <h3>GET EMAIL UPDATES</h3>
+                <p>Sign up today for monthly giveaways, engaging stories & videos, special offers & more!</p>
+                <input type="email" placeholder="email@examples.com">
+                <button>GET NEWSLETTER</button>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-items-container li').hover(function(){
+                $(this).children('.sub-nav').stop().slideDown(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            },function(){
+                $(this).children('.sub-nav').stop().slideUp(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            }
+            )
+        })
+    </script>
+</body>
+</html>

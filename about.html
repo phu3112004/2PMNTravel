@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2PM&</title>
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="/script.js">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link rel="icon" href="/assest/img/icon.png">
+    <link rel="stylesheet" href="assest/about.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <a href="index.html" class="logo"><img src="/assest/img/logo-black.png"></a>
+        <ul class="nav-items-container">
+            <li><a href="#" class="nav-item">EXPLORE</a>
+                <ul class="sub-nav">
+                    <li><a href="#" class="sub-nav-item">Hotel</a></li>
+                    <li><a href="#" class="sub-nav-item">Road Trips</a></li>
+                    <li><a href="adventure.html" class="sub-nav-item">Adventures<i class="fa-solid fa-chevron-right"></i></a>
+                        <ul class="sub-nav">
+                            <li><a href="#" class="sub-nav-item">Kayaking</a></li>
+                            <li><a href="activities.html" class="sub-nav-item">Whitewater Rafting</a></li>
+                            <li><a href="#" class="sub-nav-item">Camping</a></li>
+                            <li><a href="#" class="sub-nav-item">Multi-Sport</a></li>
+                            <li><a href="#" class="sub-nav-item">Rowing</a></li>
+                           <li><a href="#" class="sub-nav-item">Hiking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="sub-nav-item">Cities</a></li>
+                    <li><a href="#" class="sub-nav-item">Scenery</a></li>
+                    <li><a href="tours.html" class="sub-nav-item">+ All tour</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-item">DESTINATIONS</i></a>
+                <ul class="sub-nav">
+                    <li><a href="destination.html" class="sub-nav-item">Vietnam</a></li>
+                    <li><a href="#" class="sub-nav-item">World<i class="fa-solid fa-chevron-right"></i></a>
+                        <ul class="sub-nav">
+                            <li><a href="#" class="sub-nav-item">Indonesia</a></li>
+                            <li><a href="#" class="sub-nav-item">Singapore</a></li>
+                            <li><a href="#" class="sub-nav-item">Japan</a></li>
+                            <li><a href="#" class="sub-nav-item">China</a></li>
+                            <li><a href="#" class="sub-nav-item">Korea</a></li>
+                            <li><a href="#" class="sub-nav-item">Thailand</a></li>
+                            <li><a href="#" class="sub-nav-item">France</a></li>
+                            <li><a href="#" class="sub-nav-item">Italy</a></li>
+                            <li><a href="#" class="sub-nav-item">Cuba</a></li>
+                            <li><a href="#" class="sub-nav-item">USA</a></li>
+                            <li><a href="#" class="sub-nav-item">+ All Country</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="blog.html" class="nav-item">BLOG</a></li>
+            <li><a href="about.html" class="nav-item">ABOUT</a></li>
+            <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+        </ul>
+
+        <div class="nav-media">
+            <a class="nav-media-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="nav-media-item" href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a class="nav-media-item" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a class="nav-media-item" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a class="nav-media-item" href="https://x.com/"><i class="fa-brands fa-tiktok"></i></a>
+            <label class="nav-media-item" for="checkbox-login"><i class="fa-solid fa-user"></i></label>
+            <input type="checkbox" id="checkbox-login" style="display: none;">
+            <label class="login-container" for="checkbox-login">
+                <label class="login-close" for="checkbox-login"><i class="fa-solid fa-xmark"></i></label>
+                <div class="login-area" onclick="stopPropagation(event)">
+                    <h1>Log in</h1>
+                    <p>Enter your email to log in</p>
+                    <div class="login-form">
+                        <div class="login-input">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+                        <div class="login-input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input style="width: 80%;" type="password" name="password" placeholder="Password">
+                            <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                        </div>
+                        <button>Log in with email</button>
+                    </div>
+                    <div class="login-google">
+                        <div class="login-line-divide">
+                            <span>or continue with:</span>
+                        </div>
+                        <button class="login-google-button">
+                            <img src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png" alt="">
+                            Google
+                        </button>
+                    </div>
+                    <div class="login-tele">
+                        <p>Don't have an account?</p>
+                        <a onclick="goToSign()">Sign up</a>
+                    </div>
+                    <div class="login-tele">
+                        <p>By clicking continue, you agree to our</p>
+                        <a href="#">Terms of Service</a>
+                        <p>and</p>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="about-page">
+        <div class="about-slide">
+            <div class="about-slide-img"><img src="https://www.oars.com/wp-content/uploads/2023/05/Josh-Miller-Gates-of-Ladore-199-of-214-1-1902x900.jpg" alt=""></div>
+            <div class="about-slide-overlay"></div>
+            <div class="about-slide-content">
+                <h1>About</h1>
+            </div>
+        </div>
+        <div class="about-jump-container">
+            <img src="https://www.oars.com/wp-content/uploads/2022/11/Califronia-rafting-CTA-2048x1463.webp" alt="">
+            <div class="about-jump">
+                <div class="about-jump-content">
+                    <h2>ANYWHERE WE ROAM</h2>
+                    <p>
+                        We are Mark and Paul, two travellers in pursuit of adventure.
+                    </p>
+                    <p>
+                        We travel to destinations with a story to tell, seeking hidden gems, local specialities, off-the-beaten-track experiences, and jaw-dropping natural scenery. We’re drawn to the historical and political context that has shaped the lives of people and framed their collective culture.
+                    </p>
+                    <p>
+                        Our goal is to build a community of independent travellers seeking to unlock richer travel experiences; helping the curious discover less-visited places in popular destinations, and rewarding adventures in more remote locations.
+                    </p>
+                    <p>
+                        In doing so, we hope to make travel more sustainable, accessible, and a whole lot of fun.
+                    </p>
+                </div>
+                <div class="about-jump-link">
+                    <p><b>/Jump to</b></p>
+                    <a href="#about-us">About us</a>
+                    <a href="#our-stories">Our stories</a>
+                    <a href="#why-2pm&">Why 2PM&?</a>
+                    <a href="#adwards">Adwards</a>
+                    <a href="#work-with-us">Work with us</a>
+                </div>
+            </div>
+        </div>
+        <div class="about-main">
+            <div id="about-us" class="about-section">
+                <h2 class="about-section-title">About us</h2>
+                <div class="about-section-content">
+                    <p>
+                        After travelling more and more to escape our day jobs, we soon realised that seeing the world and experiencing new cultures was the pursuit, not the escape. Eventually, we abandoned our regular jobs to focus on our passion: seeing the world and making it easier for others to do so as well. 
+                    </p>
+                    <p>
+                        Anywhere We Roam was born out of our desire to share our experiences around the globe. To make popular destinations more rewarding and off-the-beaten-track places more accessible. To give people the confidence to travel, the information to make it easy and the inspiration to make it happen.
+                    </p>
+                    <p>
+                        We love storytelling, both written and visual. We can’t say no to a good hike, a decent coffee, a craft beer, superb scenery or a well-used map. We love historical cities, a wild swim, the budget telecast and cultures other than our own.
+                    </p>
+                    <div class="about-section-content-img">
+                        <img src="https://www.oars.com/wp-content/uploads/2023/04/GW_Lava_Falls_1-2048x2048.jpg" alt="">
+                        <img src="https://www.oars.com/wp-content/uploads/2023/04/the-wendt-family-2048x2048.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="our-stories" class="about-section">
+                <h2 class="about-section-title">Our stories</h2>
+                <div class="about-section-content">
+                    <p>
+                        After that first Grand Canyon trip, George knew he wanted to run it himself and spent the next several summers running any river he could to gain experience. During this time, he was teaching math full-time at Paul Revere Junior High in Los Angeles, which afforded him the luxury of having summers off. 
+                    </p>
+                    <p>
+                        By now, he also had the good fortune of acquiring four military surplus rafts for $300—a notable amount at the time. He split the cost with two friends, each paying $100. His passion for river running wasn’t waning.
+                    </p>
+                    <p>
+                        Finally, in the summer of 1967, George got his chance to lead his own Grand Canyon expedition. He set out with a small group, including fellow teacher and river runner Ed Gooch, who brought his experience of rowing for river icon Georgie White to the trip. It was a private trip, but they fancied themselves “Gooch-Wendt.”
+                    </p>
+                    <p>
+                        By 1969, their private trips turned into professional trips, and George’s dream of “officially” taking passengers downriver came to fruition. The two friends established Gooch-Wendt Expeditions and began running outfitted trips on the Colorado River, as well as on the San Juan River in Utah, the Stanislaus, American, and Merced Rivers in California, and the Rogue River in Oregon. Shortly thereafter, the company was selected as the first exclusively oar-powered rafting operator in Grand Canyon National Park and was appropriately renamed 2PM&.
+                    </p>
+                    <iframe width="100%" height="460px" style="margin-top: 32px;" src="https://www.youtube.com/embed/9kq68WcufH0?si=Y_A0VbbjvidORkHi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="why-2pm&" class="about-section">
+                <h2 class="about-section-title">Why 2PM&</h2>
+                <div class="about-section-content">
+                    <p>
+                        After travelling more and more to escape our day jobs, we soon realised that seeing the world and experiencing new cultures was the pursuit, not the escape. Eventually, we abandoned our regular jobs to focus on our passion: seeing the world and making it easier for others to do so as well. 
+                    </p>
+                    <p>
+                        Anywhere We Roam was born out of our desire to share our experiences around the globe. To make popular destinations more rewarding and off-the-beaten-track places more accessible. To give people the confidence to travel, the information to make it easy and the inspiration to make it happen.
+                    </p>
+                    <p>
+                        We love storytelling, both written and visual. We can’t say no to a good hike, a decent coffee, a craft beer, superb scenery or a well-used map. We love historical cities, a wild swim, the budget telecast and cultures other than our own.
+                    </p>
+                    <div class="about-section-content-img">
+                        <img src="https://www.oars.com/wp-content/uploads/2023/04/GW-GC72-2048x2048.webp" alt="">
+                        <img src="https://www.oars.com/wp-content/uploads/2023/04/george-grand-canyon-2048x2048.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="adwards" class="about-section">
+                <h2 class="about-section-title">adwards</h2>
+                <div class="about-section-content">
+                    <p>
+                        We were thrilled to be named Blogger of the Year at the British Guild of Travel Writers (2022), the TravMedia Awards (2021), the Blogosphere Awards (2021) and at the Travel Media Awards (2020).
+                    </p>
+                    <p>
+                        We picked up the Best Web Design / User Experience award at the Traverse Creator Awards (2021) and the bronze medal in the British Travel Awards (2020). Our article on the Jurassic Coast won silver in the Visit England Excellence Awards 2019, and we have been nominated for Webby Awards in 2020, 2021 and 2022.
+                    </p>
+                    <p>
+                        Our travel writing and photography have appeared Lonely Planet, Gestalten’s Wanderlust Europe and Suitcase Magazine.
+                    </p>
+                    <p>
+                        We were also thrilled to be included on Bucketlistly and Expert Vagabond‘s round-up of their favorite travel blogs and on the detail.com 50 Best Travel Blogs.
+                    </p>
+                    <div class="about-section-content-img-adward">
+                        <img src="https://anywhereweroam.com/wp-content/uploads/2022/08/Blogger-Vlogger.jpg" alt="">
+                        <img src="https://anywhereweroam.com/wp-content/uploads/2020/10/VE2020_social_silver-env_tile_small.png" alt="">
+                        <img src="https://anywhereweroam.com/wp-content/uploads/2024/03/TravMedia-Awards-2024-Badge-MEDIA-MediaWebsite.png" alt="">
+                        <img src="https://anywhereweroam.com/wp-content/uploads/2020/09/BestCultural_2020.jpg" alt="">
+                        <img src="https://anywhereweroam.com/wp-content/uploads/2019/05/traverse-awards.png" alt="">
+                        <img src="https://anywhereweroam.com/wp-content/uploads/2020/11/MEA-Finalist-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="work-with-us" class="about-section">
+                <h2 class="about-section-title">work with us</h2>
+                <div class="about-section-content">
+                    <p>
+                        Everything on our blog is our personal experience. We try a lot of things, do a lot of research, make a lot of mistakes, and see some duds.
+                    </p>
+                    <p>
+                        The purpose of this is to provide carefully curated content. No endless lists or places lacking imagination. All our travel recommendations are tried and tested; experiences we are passionate about.
+                    </p>
+                    <p>
+                        We bring these experiences to life through our storytelling; finessed into carefully crafted guides supported by beautiful photography.
+                    </p>
+                    <p>
+                        On the blog and on our social media, we reach beyond traditional guides to provide thoughtful, well-researched evergreen content that helps our readers travel better, more responsibly, and in greater depth while having a whole lot of fun.
+                    </p>
+                    <div class="about-section-content-img">
+                        <img style="width: 100%; height: 500px;" src="https://www.oars.com/wp-content/uploads/2022/12/oars-guides-idaho-lower-salmon-river-2048x1352.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container pd-32">
+        <div class="footer-media footer-item">
+            <img src="assest/img/logo-white.png" alt="">
+            <div class="footer-media-item">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <a class="contact-link" href="contact.html">CONTACT US</a>
+        </div>
+        <div class="footer-link footer-item">
+            <h3>QUICK LINKS</h3>
+            <a href="adventure.html">Adventures</a>
+            <a href="">Countries</a>
+            <a href="">Hotels</a>
+            <a href="about.html">About us</a>
+            <a href="blog.html">Blog</a>
+            <a href="destination.html">Dome tours</a>
+        </div>
+        <div class="footer-address footer-item">
+            <h3>ADDRESS</h3>
+            <p><i class="fa-solid fa-phone"></i>+84 923 123</p>
+            <p><i class="fa-solid fa-envelope"></i>2pm&@gm.uit.edu.vn</p>
+            <p><i class="fa-solid fa-home"></i>12/0 Duong So 1, Go Vap</p>
+            <img src="https://remarkable-jelly-df2aaa.netlify.app/assest/img/da-thong-bao-bo-cong-thuong.png" alt="">
+        </div>
+        <div class="footer-email footer-item">
+            <h3>GET EMAIL UPDATES</h3>
+            <p>Sign up today for monthly giveaways, engaging stories & videos, special offers & more!</p>
+            <input type="email" placeholder="email@examples.com">
+            <button>GET NEWSLETTER</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-items-container li').hover(function(){
+                $(this).children('.sub-nav').stop().slideDown(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            },function(){
+                $(this).children('.sub-nav').stop().slideUp(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            }
+            )
+        })
+    </script>
+</body>
+</html>

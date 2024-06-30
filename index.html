@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2PM&</title>
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="/script.js">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link rel="icon" href="/assest/img/icon.png">
+</head>
+<body>
+    <div id="main">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="/assest/img/logo-white.png"></a>
+            <ul class="nav-items-container">
+                <li><a href="#" class="nav-item">EXPLORE</a>
+                    <ul class="sub-nav">
+                        <li><a href="#" class="sub-nav-item">Hotel</a></li>
+                        <li><a href="#" class="sub-nav-item">Road Trips</a></li>
+                        <li><a href="adventure.html" class="sub-nav-item">Adventures<i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#" class="sub-nav-item">Kayaking</a></li>
+                                <li><a href="activities.html" class="sub-nav-item">Whitewater Rafting</a></li>
+                                <li><a href="#" class="sub-nav-item">Camping</a></li>
+                                <li><a href="#" class="sub-nav-item">Multi-Sport</a></li>
+                                <li><a href="#" class="sub-nav-item">Rowing</a></li>
+                               <li><a href="#" class="sub-nav-item">Hiking</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="sub-nav-item">Cities</a></li>
+                        <li><a href="#" class="sub-nav-item">Scenery</a></li>
+                        <li><a href="tours.html" class="sub-nav-item">+ All tour</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-item">DESTINATIONS</i></a>
+                    <ul class="sub-nav">
+                        <li><a href="destination.html" class="sub-nav-item">Vietnam</a></li>
+                        <li><a href="#" class="sub-nav-item">World<i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#" class="sub-nav-item">Indonesia</a></li>
+                                <li><a href="#" class="sub-nav-item">Singapore</a></li>
+                                <li><a href="#" class="sub-nav-item">Japan</a></li>
+                                <li><a href="#" class="sub-nav-item">China</a></li>
+                                <li><a href="#" class="sub-nav-item">Korea</a></li>
+                                <li><a href="#" class="sub-nav-item">Thailand</a></li>
+                                <li><a href="#" class="sub-nav-item">France</a></li>
+                                <li><a href="#" class="sub-nav-item">Italy</a></li>
+                                <li><a href="#" class="sub-nav-item">Cuba</a></li>
+                                <li><a href="#" class="sub-nav-item">USA</a></li>
+                                <li><a href="#" class="sub-nav-item">+ All Country</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="blog.html" class="nav-item">BLOG</a></li>
+                <li><a href="about.html" class="nav-item">ABOUT</a></li>
+                <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+            </ul>
+    
+            <div class="nav-media">
+                <a class="nav-media-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="nav-media-item" href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a class="nav-media-item" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a class="nav-media-item" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a class="nav-media-item" href="https://x.com/"><i class="fa-brands fa-tiktok"></i></a>
+                <label class="nav-media-item" for="checkbox-login"><i class="fa-solid fa-user"></i></label>
+                <input type="checkbox" id="checkbox-login" style="display: none;">
+                <label class="login-container" for="checkbox-login">
+                    <label class="login-close" for="checkbox-login"><i class="fa-solid fa-xmark"></i></label>
+                    <div class="login-area" onclick="stopPropagation(event)">
+                        <h1>Log in</h1>
+                        <p>Enter your email to log in</p>
+                        <div class="login-form">
+                            <div class="login-input">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="login-input">
+                                <i class="fa-solid fa-lock"></i>
+                                <input style="width: 80%;" type="password" name="password" placeholder="Password">
+                                <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                            </div>
+                            <button>Log in with email</button>
+                        </div>
+                        <div class="login-google">
+                            <div class="login-line-divide">
+                                <span>or continue with:</span>
+                            </div>
+                            <button class="login-google-button">
+                                <img src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png" alt="">
+                                Google
+                            </button>
+                        </div>
+                        <div class="login-tele">
+                            <p>Don't have an account?</p>
+                            <a onclick="goToSign()">Sign up</a>
+                        </div>
+                        <div class="login-tele">
+                            <p>By clicking continue, you agree to our</p>
+                            <a href="#">Terms of Service</a>
+                            <p>and</p>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="slide-item" style="background-image: url('https://media.cntraveler.com/photos/5b1a9b8408618014c567f2f2/16:9/w_2560%2Cc_limit/Chengdu%2520China_GettyImages-510901343.jpg');">
+                    <div class="content">
+                        <div class="name">China</div>
+                        <div class="des">Discover the wonders of China, from the Great Wall and Forbidden City in Beijing to the vibrant metropolis of Shanghai and the breathtaking landscapes of Guilin.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="slide-item" style="background-image: url('https://mediaim.expedia.com/destination/1/126c28570791219047af6283533dd15e.jpg');">
+                    <div class="content">
+                        <div class="name">Japan</div>
+                        <div class="des">Experience the perfect blend of tradition and modernity in Japan, from tranquil temples and stunning cherry blossoms to bustling cityscapes and high-speed bullet trains.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="slide-item" style="background-image: url('https://image.cnbcfm.com/api/v1/image/107083533-1656642957063-gettyimages-1297070972-gty_bre-35-saintmalo-17-dji_0434.jpeg?v=1656643265');">
+                    <div class="content">
+                        <div class="name">France</div>
+                        <div class="des">Explore the romantic streets of Paris, indulge in exquisite cuisine, and marvel at iconic landmarks like the Eiffel Tower and Louvre Museum.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="slide-item" style="background-image: url('https://delivery.gfobcontent.com/api/public/content/69158ae40b48417eb30d19fcc97942a8?v=160b28fd');">
+                    <div class="content">
+                        <div class="name">Italy</div>
+                        <div class="des">Immerse yourself in the rich history and culture of Italy as you wander through ancient ruins in Rome, cruise along the picturesque canals of Venice, and savor authentic Italian pasta and gelato.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="slide-item" style="background-image: url('https://goldensmiletravel.com/uploads/images/2023/07/13/thai-lan-vung-dat-cua-tu-do-1689241457.jpg');">
+                    <div class="content">
+                        <div class="name">Thailand</div>
+                        <div class="des">Relax on pristine beaches, explore ornate temples, and sample mouthwatering street food in Thailand, a land of tropical beauty and warm hospitality.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                
+                <div class="slide-item" style="background-image: url('https://vcdn1-dulich.vnecdn.net/2022/05/26/cung-9276-1653564521.jpg?w=0&h=0&q=100&dpr=1&fit=crop&s=7dZFqEL1WXnThF-GUnlwRw');">
+                    <div class="content">
+                        <div class="name">Korea</div>
+                        <div class="des">Delve into the dynamic culture of South Korea with its bustling street markets, ancient palaces, scenic mountain trails, and futuristic cityscapes.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="slide-item" style="background-image: url('https://wallpaperaccess.com/full/189061.jpg');">
+                    <div class="content">
+                        <div class="name">Singapore</div>
+                        <div class="des">Indulge in a melting pot of cultures and cuisines in Singapore, where you can explore vibrant neighborhoods, relax in lush gardens, and enjoy world-class shopping and dining.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="slide-button">
+                <button class="prev"> <i class="fa-solid fa-chevron-left"></i> </button>
+                <button class="next"> <i class="fa-solid fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="find-container">
+            <div class="find-content">
+                <label for="find-destination" class="find-title">Destination</label>
+                <select id="find-destination" class="find-dropdown">
+                    <option value="Ha Noi">Ha Noi</option>
+                    <option value="Cao Bang">Cao Bang</option>
+                    <option value="Sa Pa">Sa Pa</option>
+                    <option value="Ha Giang">Ha Giang</option>
+                    <option value="Hai Phong">Hai Phong</option>
+                    <option value="Hue">Hue</option>
+                    <option value="Hoi An">Hoi An</option>
+                    <option value="Da Nang">Da Nang</option>
+                    <option value="Nha Trang">Nha Trang</option>
+                    <option value="Phan Thiet">Phan Thiet</option>
+                    <option value="Mui Ne">Mui Ne</option>
+                    <option value="Sai Gon">Sai Gon</option>
+                    <option value="Vung Tau">Vung Tau</option>
+                    <option value="Ben Tre">Ben Tre</option>
+                    <option value="Tien Giang">Tien Giang</option>
+                    <option value="An Giang">An Giang</option>
+                    <option value="Can Tho">Can Tho</option>
+                    <option value="Vinh Long">Vinh Long</option>
+                    <option value="Ca Mau">Ca Mau</option>
+                    <option value="Kien Giang">Kien Giang</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="Korea">Korea</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="France">France</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Taiwan">Taiwan</option>
+
+                </select>
+            </div>
+            <div class="find-content">
+                <label for="find-activity" class="find-title">Activity</label>
+                <select id="find-activity" class="find-dropdown">
+                    <option value="whitewater">Whitewater Rafting</option>
+                    <option value="hiking">Hiking</option>
+                    <option value="camping">Camping</option>
+                    <option value="rowing">Rowing</option>
+                    <option value="kayaking">Kayaking</option>
+                    <option value="multisport">Multi-Sport</option>
+                </select>
+            </div>
+            <div class="find-content">
+                <label for="find-range" class="find-title">Range</label>
+                <select id="find-range" class="find-dropdown">
+                    <option value="1day">1 Day</option>
+                    <option value="23days">2-3 Days</option>
+                    <option value="47days">4-7 Days</option>
+                    <option value="8days">8+ Days</option>
+                </select>
+            </div>
+            <div class="find-content">
+                <label for="find-month" class="find-title">Month</label>
+                <select id="find-month" class="find-dropdown">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+            <div class="find-content">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="https://anywhereweroam.com/wp-content/uploads/2024/01/anywhereweroam-uai-1125x1125.webp" alt="">
+            </div>
+            <div class="about-des">
+                <h2>Welcome to <br> 2PM& TRAVEL</h2>
+                <p>From scenic road trips winding through breathtaking landscapes to hidden hiking gems off the beaten path, we've got you covered with a plethora of exciting destinations to explore. Our mission is to empower you with the knowledge and resources to travel with confidence and ease.
+
+                    At 2PM& TRAVEL, we believe that the journey itself is as important as the destination. Let us be your trusted companion as you navigate the globe, uncovering hidden gems and creating unforgettable memories. So pack your bags, grab your camera, and join us on a journey of exploration and discovery.</p>
+                <a href="about.html" class="about-btn">
+                    ABOUT US <i class="fa-solid fa-chevron-right"></i> 
+                </a>
+            </div>
+        </div>
+        <div class="divider-container">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fa-solid fa-location-arrow"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+        <div class="tour-container">
+            <div class="tour-adventure">
+                <img src="https://www.oars.com/wp-content/uploads/2022/11/oars-homepage-bg.webp" alt="">
+                <div class="tour-detail-page">
+                    <div class="tour-detail-page-item tour-page-bg"></div>
+                    <div class="tour-detail-page-item"></div>
+                    <div class="tour-detail-page-item"></div>
+                    <div class="tour-detail-page-item"></div>
+                    <div class="tour-detail-page-item"></div>
+                    <div class="tour-detail-page-item"></div>
+                </div>
+                <div class="tour-detail">
+                    <div class="tour-detail-item">
+                        <h1>Kayaking</h1>
+                        <p>Kayaking is a water sport where individuals paddle a kayak through water. Kayaks are small, narrow boats that are propelled using a double-bladed paddle. Kayaking can be done on calm lakes, slow-moving rivers, or even in coastal waters. It offers a thrilling way to explore waterways and enjoy nature.</p>
+                        <a href="#">View more details</a>
+                    </div>
+                    <div class="tour-detail-item">
+                        <h1>Rowing</h1>
+                        <p>Rowing involves propelling a boat through water using oars. It can be done for leisure, exercise, or competition. Rowing is a full-body workout that requires coordination, strength, and endurance. It is often enjoyed on calm waters such as lakes, rivers, or canals.</p>
+                        <a href="#">View more details</a>
+                    </div>
+                    <div class="tour-detail-item">
+                        <h1>Hiking</h1>
+                        <p>Hiking is the activity of walking in natural environments, often on trails or paths. It is a popular outdoor activity that can vary from leisurely walks to challenging treks through rugged terrain. Hikers often enjoy the fresh air, scenic views, and physical exercise that hiking provides.</p>
+                        <a href="#">View more details</a>
+                    </div>
+                    <div class="tour-detail-item">
+                        <h1>Camping</h1>
+                        <p>Camping involves staying overnight outdoors, typically in tents or other temporary shelters. It is a popular recreational activity that allows people to disconnect from the hustle and bustle of everyday life and reconnect with nature. Campers often enjoy activities such as hiking, fishing, cooking over a campfire, and stargazing.</p>
+                        <a href="#">View more details</a>
+                    </div>
+                    <div class="tour-detail-item">
+                        <h1>Whitewater rafting</h1>
+                        <p>Whitewater rafting is an adventurous activity where a group of people navigate a raft through turbulent river rapids. Participants work together to paddle the raft and navigate obstacles under the guidance of a trained guide. Whitewater rafting is known for its excitement, adrenaline rush, and teamwork.</p>
+                        <a href="#">View more details</a>
+                    </div>
+                    <div class="tour-detail-item">
+                        <h1>Multi-sport</h1>
+                        <p>Multi-sport adventures involve engaging in a variety of outdoor activities over a single trip or vacation. These trips often combine activities such as hiking, biking, kayaking, rafting, and more. Participants get to experience a diverse range of landscapes and environments, from mountains and rivers to forests and coastlines. Multi-sport adventures offer excitement, challenge, and the opportunity to explore different activities while enjoying the great outdoors. They are ideal for adventurous individuals or groups seeking a dynamic and immersive outdoor experience.</p>
+                        <a href="#">View more details</a>
+                    </div>
+                </div>
+                <div class="tour-adventure-more">
+                    <p>Featured Adventures</p>
+                    <h2>OUR MOST POPULAR TRIPS</h2>
+                    <a href="tours.html">VIEW ALL TOURS</a>
+                </div>
+            </div>
+            <div class="tour-item">
+                <div class="tour-item-container">
+                    <div class="tour-item-img">
+                        <img src="https://www.oars.com/wp-content/uploads/2015/12/LOD-featured-410x232.webp" alt="">
+                    </div>
+                    <div class="tour-item-content">
+                        <p class="tour-item-tag">KAYAKING</p>
+                        <a href="#" class="tour-item-title">Sunset Kayak Adventure on Crystal Lake</a>
+                        <div class="tour-item-rate">
+                            <p class="tour-item-day">3 Days</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.8</p>
+                            <p>(90)</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Location:</div>
+                            <p>Utah</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Level:</div>
+                            <p>Moderate</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Minimum Age:</div>
+                            <p>12</p>
+                        </div>
+                        <div class="tour-item-price">
+                            <div class="tour-item-price-title">
+                                <p>From</p>
+                                <h2>$220</h2>
+                            </div>
+                            <div class="tour-item-price-compare">
+                                COMPARE 
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item-container">
+                    <div class="tour-item-img">
+                        <img src="https://www.oars.com/wp-content/uploads/2015/12/SFA1D-featured-410x232.webp" alt="">
+                    </div>
+                    <div class="tour-item-content">
+                        <p class="tour-item-tag">MULTI-SPORT</p>
+                        <a href="#" class="tour-item-title">Rock Climbing and Rafting in Yosemite</a>
+                        <div class="tour-item-rate">
+                            <p class="tour-item-day">5 Days</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.7</p>
+                            <p>(85)</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Location:</div>
+                            <p>California</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Level:</div>
+                            <p>Moderately Challenging</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Minimum Age:</div>
+                            <p>14</p>
+                        </div>
+                        <div class="tour-item-price">
+                            <div class="tour-item-price-title">
+                                <p>From</p>
+                                <h2>$450</h2>
+                            </div>
+                            <div class="tour-item-price-compare">
+                                COMPARE 
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item-container">
+                    <div class="tour-item-img">
+                        <img src="https://www.oars.com/wp-content/uploads/2015/12/CAT-featured-410x232.webp" alt="">
+                    </div>
+                    <div class="tour-item-content">
+                        <p class="tour-item-tag">CAMPING</p>
+                        <a href="#" class="tour-item-title">Family Camping and Rafting on the Rogue River</a>
+                        <div class="tour-item-rate">
+                            <p class="tour-item-day">4 Days</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9</p>
+                            <p>(120)</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Location:</div>
+                            <p>Oregon</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Level:</div>
+                            <p>Easier</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Minimum Age:</div>
+                            <p>8</p>
+                        </div>
+                        <div class="tour-item-price">
+                            <div class="tour-item-price-title">
+                                <p>From</p>
+                                <h2>$300</h2>
+                            </div>
+                            <div class="tour-item-price-compare">
+                                COMPARE 
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item-container">
+                    <div class="tour-item-img">
+                        <img src="https://www.oars.com/wp-content/uploads/2022/09/ROG-1HERO1-LG-410x232.webp" alt="">
+                    </div>
+                    <div class="tour-item-content">
+                        <p class="tour-item-tag">ROWING</p>
+                        <a href="#" class="tour-item-title">Rowing the Salmon River Canyons</a>
+                        <div class="tour-item-rate">
+                            <p class="tour-item-day">6 Days</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.8</p>
+                            <p>(100)</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Location:</div>
+                            <p>Idaho</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Level:</div>
+                            <p>Challenging</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Minimum Age:</div>
+                            <p>16</p>
+                        </div>
+                        <div class="tour-item-price">
+                            <div class="tour-item-price-title">
+                                <p>From</p>
+                                <h2>$600</h2>
+                            </div>
+                            <div class="tour-item-price-compare">
+                                COMPARE 
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item-container">
+                    <div class="tour-item-img">
+                        <img src="https://www.oars.com/wp-content/uploads/2022/10/LowerCanyon-featured-410x232.webp" alt="">
+                    </div>
+                    <div class="tour-item-content">
+                        <p class="tour-item-tag">KAYAKING</p>
+                        <a href="#" class="tour-item-title">Kayaking the Lower Canyon of the Grand Canyon</a>
+                        <div class="tour-item-rate">
+                            <p class="tour-item-day">7 Days</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9</p>
+                            <p>(150)</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Location:</div>
+                            <p>Arizona</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Level:</div>
+                            <p>Moderate</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Minimum Age:</div>
+                            <p>10</p>
+                        </div>
+                        <div class="tour-item-price">
+                            <div class="tour-item-price-title">
+                                <p>From</p>
+                                <h2>$550</h2>
+                            </div>
+                            <div class="tour-item-price-compare">
+                                COMPARE 
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item-container">
+                    <div class="tour-item-img">
+                        <img src="https://www.oars.com/wp-content/uploads/2015/12/Middle-Fork-Salmon-featured-410x232.webp" alt="">
+                    </div>
+                    <div class="tour-item-content">
+                        <p class="tour-item-tag">CAMPING</p>
+                        <a href="#" class="tour-item-title">Camping and Hiking the Sierra Nevada</a>
+                        <div class="tour-item-rate">
+                            <p class="tour-item-day">3 Days</p>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.7</p>
+                            <p>(110)</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Location:</div>
+                            <p>California</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Level:</div>
+                            <p>Easier to Moderate</p>
+                        </div>
+                        <div class="tour-item-info">
+                            <div class="tour-item-info-title">Minimum Age:</div>
+                            <p>10</p>
+                        </div>
+                        <div class="tour-item-price">
+                            <div class="tour-item-price-title">
+                                <p>From</p>
+                                <h2>$250</h2>
+                            </div>
+                            <div class="tour-item-price-compare">
+                                COMPARE 
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tour-item-button">
+                <button class="tour-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="tour-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                
+                <div class="tour-item-page white-bg"></div>
+                <div class="tour-item-page"></div>
+                <div class="tour-item-page"></div>
+                <div class="tour-item-page"></div>
+                <div class="tour-item-page"></div>
+                <div class="tour-item-page"></div>
+                <div class="tour-item-page"></div>
+                <div class="tour-item-page"></div>
+                <div class="tour-item-page"></div>
+                <div class="tour-item-page"></div>
+            </div>
+            <div class="tour-story">
+                <img src="https://www.oars.com/wp-content/uploads/2022/11/topo-river-dark.svg" alt="">
+                <img src="https://www.oars.com/wp-content/uploads/2022/11/river-rock-wall.webp" alt="">
+                <div class="tour-story-container">
+                    <div class="tour-story-1">
+                        <div class="tour-story-1-title">
+                            <h2>The 2PM& Story</h2>
+                            <h2>EXPLORING IS IN OUR ROOTS</h2>
+                            <a href="about.html#why-2pm&">WHY 2PM&?</a>
+                        </div>
+                        <div class="tour-story-1-content">
+                            <p>There’s a reason that more than 80% of 2PM& travelers each year are repeat guests or were referred by a past 2PM& traveler.</p>
+                        </div>
+                    </div>
+                    <div class="tour-story-2">
+                        <div class="tour-story-2-content">
+                            <h1>Family-Owned & Operated</h1>
+                            <p>Guiding life’s greatest adventures since 1969</p>
+                        </div>
+                        <div class="tour-story-2-content">
+                            <h1>Professionalism</h1>
+                            <p>The most experienced and customer-focused guides & staff in the industry</p>
+                        </div>
+                        <div class="tour-story-2-content">
+                            <h1>Personal Service</h1>
+                            <p>Low guide-to-guest ratio & small group sizes</p>
+                        </div>
+                        <div class="tour-story-2-content">
+                            <h1>High-Quality Equipment</h1>
+                            <p>We invest in top-of-the-line rafts & expedition equipment</p>
+                        </div>
+                        <div class="tour-story-2-content">
+                            <h1>Responsible Travel</h1>
+                            <p>Our commitment to the environment & local communities is unmatched</p>
+                        </div>
+                        <div class="tour-story-2-content">
+                            <h1>Unparalleled Access</h1>
+                            <p>Most diverse collection of river-running permits in the world</p>
+                        </div>
+                    </div>
+                    <div class="tour-story-3">
+                        <div class="tour-story-3-title">
+                            <h2>Where We Travel</h2>
+                            <h2>FEATURED DESTINATION</h2>
+                            <p>2PM& TRAVEL offers more than 75 unique vacation itineraries across Vietnam and world.</p>
+                            <a href="#">VIEW ALL DESTINATIONS</a>
+                        </div>
+                        <div class="tour-story-3-content">
+                            <div class="tour-story-3-content-item-container">
+                                <div class="tour-story-3-content-item">
+                                    <div class="tour-story-3-content-item-img">
+                                        <img src="https://www.oars.com/wp-content/uploads/2022/11/peru-hero-400x760.webp" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">machu pichu, peru
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="tour-story-3-content-item">
+                                    <div class="tour-story-3-content-item-img half-h pd-b">
+                                        <img src="https://www.oars.com/wp-content/uploads/2023/04/Oars-Middle-Fork-Salmon-79-1-600x600.webp" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">idaho
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                    <div class="tour-story-3-content-item-img half-h pd-t">
+                                        <img src="https://www.oars.com/wp-content/uploads/2022/12/rogue-river-hero-800x800.webp" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">rouge river
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="tour-story-3-content-item">
+                                    <div class="tour-story-3-content-item-img">
+                                        <img src="https://www.oars.com/wp-content/uploads/2022/11/yosemite-hero-400x760.webp" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">yosemite national park
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="tour-story-3-content-item">
+                                    <div class="tour-story-3-content-item-img half-h pd-b">
+                                        <img src="https://www.oars.com/wp-content/uploads/2023/04/Patagonia-Hero-scaled-600x600.jpg" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">patagonia
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                    <div class="tour-story-3-content-item-img half-h pd-t">
+                                        <img src="https://www.oars.com/wp-content/uploads/2022/11/canada-hero-600x600.jpg" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">canada
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="tour-story-3-content-item">
+                                    <div class="tour-story-3-content-item-img">
+                                        <img src="https://www.oars.com/wp-content/uploads/2022/11/Dinosaur-hero-400x760.webp" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">Dinosaur Nation Mountment
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="tour-story-3-content-item">
+                                    <div class="tour-story-3-content-item-img half-h pd-b">
+                                        <img src="https://www.oars.com/wp-content/uploads/2023/04/DSC1185-600x600.jpg" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">baja, mexico
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                    <div class="tour-story-3-content-item-img half-h pd-t">
+                                        <img src="https://www.oars.com/wp-content/uploads/2023/05/Colorado-River-dest-fea2t-600x600.webp" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">colorado river
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="tour-story-3-content-item">
+                                    <div class="tour-story-3-content-item-img">
+                                        <img src="https://www.oars.com/wp-content/uploads/2022/11/american-river-hero-400x760.webp" alt="">
+                                        <div class="tour-story-3-content-link">
+                                            <a href="#">America river
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tour-story-3-content-item-button">
+                                <button class="tour-story-prev">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="tour-story-next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <div class="tour-story-page white-bg"></div>
+                                <div class="tour-story-page"></div>
+                                <div class="tour-story-page"></div>
+                                <div class="tour-story-page"></div>
+                                <div class="tour-story-page"></div>
+                                <div class="tour-story-page"></div>
+                                <div class="tour-story-page"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container pd-32">
+            <div class="blog-link">
+                <h1>EXPLORE THE BLOG</h1>
+                <a href="blog.html" class="blog-button">VIEW ALL BLOG POSTS</a>
+            </div>
+            <div class="blog-item-container">
+                <a href="post.html" class="blog-item">
+                    <img src="https://www.oars.com/wp-content/uploads/2023/12/Rafting-101-thumbnail-410x232.webp" alt="">
+                    <h2>What to Expect on a Multi-day River Trip</h2>
+                    <p>By Armin at 24/04/2024</p>
+                </a>
+                <a href="#" class="blog-item">
+                    <img src="https://www.oars.com/wp-content/uploads/2023/05/james-kaiser-cataract-2015-128-410x232.jpg" alt="">
+                    <h2>Cataract Canyon: A Bright Spot in the Colorado River Basin</h2>
+                    <p>By Ackerman Mikasa at 24/04/2024</p>
+                </a>
+                <a href="#" class="blog-item">
+                    <img src="https://www.oars.com/wp-content/uploads/2023/04/canada-chilko-chilcotin-021-2-410x232.webp" alt="">
+                    <h2>10 of the World’s Most Notorious Whitewater Rapids</h2>
+                    <p>By Eren Yeager at 24/04/2024</p>
+                </a>
+            </div>
+        </div>
+        <div class="contact-container pd-32">
+            <div class="contact-item-container">
+                <div class="contact-item">
+                    <div class="contact-img-container">
+                        <img src="https://www.sentiermind.com/wp-content/uploads/2021/02/contact-us.jpg" alt="">
+                    </div>
+                </div>
+                <div class="contact-item pd-32">
+                    <h2>IF YOU WANT TO KNOW MORE?<br>FEEL FREE TO GET IN TOUCH WITH US</h2>
+                    <a class="contact-link" href="contact.html">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container pd-32">
+            <div class="footer-media footer-item">
+                <img src="assest/img/logo-white.png" alt="">
+                <div class="footer-media-item">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a class="contact-link" href="contact.html">CONTACT US</a>
+            </div>
+            <div class="footer-link footer-item">
+                <h3>QUICK LINKS</h3>
+                <a href="adventure.html">Adventures</a>
+                <a href="">Countries</a>
+                <a href="">Hotels</a>
+                <a href="about.html">About us</a>
+                <a href="blog.html">Blog</a>
+                <a href="destination.html">Dome tours</a>
+            </div>
+            <div class="footer-address footer-item">
+                <h3>ADDRESS</h3>
+                <p><i class="fa-solid fa-phone"></i>+84 923 123</p>
+                <p><i class="fa-solid fa-envelope"></i>2pm&@gm.uit.edu.vn</p>
+                <p><i class="fa-solid fa-home"></i>12/0 Duong So 1, Go Vap</p>
+                <img src="https://remarkable-jelly-df2aaa.netlify.app/assest/img/da-thong-bao-bo-cong-thuong.png" alt="">
+            </div>
+            <div class="footer-email footer-item">
+                <h3>GET EMAIL UPDATES</h3>
+                <p>Sign up today for monthly giveaways, engaging stories & videos, special offers & more!</p>
+                <input type="email" placeholder="email@examples.com">
+                <button>GET NEWSLETTER</button>
+            </div>
+        </div>
+    </div>
+    <script src="scroll.js"></script>
+    <script src="script.js"></script> 
+    <script src="login.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-items-container li').hover(function(){
+                $(this).children('.sub-nav').stop().slideDown(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            },function(){
+                $(this).children('.sub-nav').stop().slideUp(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            }
+            )
+        })
+    </script>
+</body>
+</html>
