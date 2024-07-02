@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2PM&</title>
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="/script.js">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link rel="icon" href="/assest/img/icon.png">
+    <link rel="stylesheet" href="assest/details.css"> 
+  
+</head>
+<body>
+   <div id="main"> 
+    <div class="nav-container">
+        <a href="index.html" class="logo"><img src="/assest/img/logo-black.png"></a>
+        <ul class="nav-items-container">
+            <li><a href="#" class="nav-item">EXPLORE</a>
+                <ul class="sub-nav">
+                    <li><a href="#" class="sub-nav-item">Hotel</a></li>
+                    <li><a href="#" class="sub-nav-item">Road Trips</a></li>
+                    <li><a href="adventure.html" class="sub-nav-item">Adventures<i class="fa-solid fa-chevron-right"></i></a>
+                        <ul class="sub-nav">
+                            <li><a href="#" class="sub-nav-item">Kayaking</a></li>
+                            <li><a href="activities.html" class="sub-nav-item">Whitewater Rafting</a></li>
+                            <li><a href="#" class="sub-nav-item">Camping</a></li>
+                            <li><a href="#" class="sub-nav-item">Multi-Sport</a></li>
+                            <li><a href="#" class="sub-nav-item">Rowing</a></li>
+                           <li><a href="#" class="sub-nav-item">Hiking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="sub-nav-item">Cities</a></li>
+                    <li><a href="#" class="sub-nav-item">Scenery</a></li>
+                    <li><a href="tours.html" class="sub-nav-item">+ All tour</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-item">DESTINATIONS</i></a>
+                <ul class="sub-nav">
+                    <li><a href="destination.html" class="sub-nav-item">Vietnam</a></li>
+                    <li><a href="#" class="sub-nav-item">World<i class="fa-solid fa-chevron-right"></i></a>
+                        <ul class="sub-nav">
+                            <li><a href="#" class="sub-nav-item">Indonesia</a></li>
+                            <li><a href="#" class="sub-nav-item">Singapore</a></li>
+                            <li><a href="#" class="sub-nav-item">Japan</a></li>
+                            <li><a href="#" class="sub-nav-item">China</a></li>
+                            <li><a href="#" class="sub-nav-item">Korea</a></li>
+                            <li><a href="#" class="sub-nav-item">Thailand</a></li>
+                            <li><a href="#" class="sub-nav-item">France</a></li>
+                            <li><a href="#" class="sub-nav-item">Italy</a></li>
+                            <li><a href="#" class="sub-nav-item">Cuba</a></li>
+                            <li><a href="#" class="sub-nav-item">USA</a></li>
+                            <li><a href="#" class="sub-nav-item">+ All Country</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="blog.html" class="nav-item">BLOG</a></li>
+            <li><a href="about.html" class="nav-item">ABOUT</a></li>
+            <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+        </ul>
+
+        <div class="nav-media">
+            <a class="nav-media-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="nav-media-item" href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a class="nav-media-item" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a class="nav-media-item" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a class="nav-media-item" href="https://x.com/"><i class="fa-brands fa-tiktok"></i></a>
+            <label class="nav-media-item" for="checkbox-login"><i class="fa-solid fa-user"></i></label>
+            <input type="checkbox" id="checkbox-login" style="display: none;">
+            <label class="login-container" for="checkbox-login">
+                <label class="login-close" for="checkbox-login"><i class="fa-solid fa-xmark"></i></label>
+                <div class="login-area" onclick="stopPropagation(event)">
+                    <h1>Log in</h1>
+                    <p>Enter your email to log in</p>
+                    <div class="login-form">
+                        <div class="login-input">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+                        <div class="login-input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input style="width: 80%;" type="password" name="password" placeholder="Password">
+                            <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                        </div>
+                        <button>Log in with email</button>
+                    </div>
+                    <div class="login-google">
+                        <div class="login-line-divide">
+                            <span>or continue with:</span>
+                        </div>
+                        <button class="login-google-button">
+                            <img src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png" alt="">
+                            Google
+                        </button>
+                    </div>
+                    <div class="login-tele">
+                        <p>Don't have an account?</p>
+                        <a onclick="goToSign()">Sign up</a>
+                    </div>
+                    <div class="login-tele">
+                        <p>By clicking continue, you agree to our</p>
+                        <a href="#">Terms of Service</a>
+                        <p>and</p>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="details-page">
+        <div class="details-info">
+            <a href="activities.html">WHITEWATER RAFTING</a>
+            <h1>Tuolumne River Rafting Near Yosemite National Park</h1>
+            <div class="details-info-details">
+                <p>2 or 3 Days</p>
+                <div class="details-info-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div> 
+                <p>4.9 (87 reviews)</p>
+            </div>
+            <div class="details-info-desc">
+                <div class="details-info-desc-item">
+                    <h3>LOCATION</h3>
+                    <p>California</p>
+                </div>
+                <div class="details-info-desc-item">
+                    <h3>ADVENTURE LEVEL</h3>
+                    <p>Moderately Challenging </p>
+                </div>
+                <div class="details-info-desc-item">
+                    <h3>MINIMUM AGE</h3>
+                    <p>14 (16 during high water)</p>
+                </div>
+                <div class="details-info-desc-item">
+                    <h3>RIVER RATING</h3>
+                    <p>Class IV (Class V possible during peak flows)</p>
+                </div>
+                <div class="details-info-desc-item">
+                    <h3>FROM</h3>
+                    <p>2 or 3 Days from $599 | Wine trips from $1099</p>
+                </div>
+            </div>
+        </div>
+        <div class="details-img">
+            <div id="details-img-container">
+                <img class="details-img-item" src="https://www.oars.com/wp-content/uploads/2015/12/TUO6-840x546.jpg" alt="">
+                <img class="details-img-item" src="https://www.oars.com/wp-content/uploads/2015/12/TUO081423-11-840x546.jpg" alt="">
+                <img class="details-img-item" src="https://www.oars.com/wp-content/uploads/2015/12/TUO081423-17-840x546.webp" alt="">
+                <img class="details-img-item" src="https://www.oars.com/wp-content/uploads/2015/12/TUO2-840x546.jpg" alt="">
+                <img class="details-img-item" src="https://www.oars.com/wp-content/uploads/2015/12/TUO12-840x546.jpg" alt="">
+                <img class="details-img-item" src="https://www.oars.com/wp-content/uploads/2015/12/TUO3-840x546.webp" alt="">
+                <img class="details-img-item" src="https://www.oars.com/wp-content/uploads/2015/12/TUO1-840x546.jpg" alt="">
+            </div> 
+            <button id="details-img-left-btn" class="details-img-btn"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="details-img-right-btn" class="details-img-btn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div class="details-overview">
+            <div class="details-overview-desc">
+                <h2>Tuolumne River rafting, available just outside Yosemite National Park, is a standard-setter among all the California whitewater experiences 2PM& offers.</h2>
+                <p>Pronounced “too-all-uh-me,” and affectionately referred to as “the T,” it’s one of our “Seven Whitewater Wonders” of the World. But it’s not just the 18 miles of nearly continuous Class IV whitewater that attracts paddlers from all over the world to this Wild & Scenic River. A Tuolumne River rafting trip is a true wilderness adventure in the Yosemite region complete with stunning, scenic beauty, brilliant star-filled nights, and big thrills. And you’ve got options. Choose from an adventurous 48-hour getaway with cool hikes up side canyons carved by cascading waterfalls, or a carefree three-day Tuolumne rafting vacation, with lots of time to explore and relax while reconnecting with nature in a secluded river canyon. </p>
+            </div>
+           <div class="details-overview-highlight">
+                <h2>Trip Highlights</h2>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i>18 miles of continuous Class IV Tuolumne River whitewater rafting</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Raft 15 unforgettable rapids like Ram’s Head, Clavey Falls, Gray’s Grindstone & more</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Camp near Yosemite in a Wild & Scenic river canyon</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Hike, play bocce ball or horseshoes, swim, explore creeks & waterfalls</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Wine on the River & Craft Beer Tasting trips available</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Easy drive from San Francisco, Sacramento & Lake Tahoe</li>
+                </ul>
+           </div>
+        </div>
+        <div class="details-itinerary">
+            <h1>ITINERARY & MAP</h1>
+            <div class="details-itinerary-day">
+                <div class="details-itinerary-day-item details-itinerary-day-bg" onclick="twodays(this)">2 Days</div>
+                <div class="details-itinerary-day-item" onclick="threedays(this)">3 Days</div>
+            </div>
+            <div class="details-itinerary-info">
+                <div class="details-itinerary-info-desc">
+                    <h2>Itinerary at a Glance</h2>
+                    <p>We pride ourselves in running a relaxed and flexible schedule. Every Tuolumne River rafting trip is different depending upon the group, other trips on the water, camp locations, and sometimes the weather. The following is a sample of what your trip might be like:</p>
+                    <div class="details-itinerary-info-desc-day">
+                        <button onclick="toggleDropdown('day1', this)">Day 1 <i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="day1" class="details-itinerary-desc-day-details">
+                            <p>The morning of your trip, you’ll meet up with your trip leader and fellow travelers before embarking on a 3-mile hike to the river. At the put-in, your guides will deliver an orientation and safety talk and fit you with your helmet and PFD (wetsuits and splash tops are also included on all early-season and cold-weather trips). Then, we hit the water!
+    
+                                The Tuolumne is nearly consistent whitewater, with four exciting rapids in the first two miles: Rock Garden, Nemesis, Sunderlands Chute, and Ram’s Head. Come lunchtime, we’ll pull over to a sandy beach for a delicious picnic. 
+                                
+                                Downstream, we encounter the ultimate thrill: Clavey Falls; this Class IV+ rapid features a series of staircase drops that delivers unabashed excitement. Between rapids, you’re welcome to enjoy a refreshing swim in the calm stretches of cool water.
+                                
+                                We reach camp by mid- to late afternoon. Your guides will set up the kitchen, restroom, and common areas while you set up your tent. The guides will serve hors d’oeuvres while they prepare dinner.
+                                
+                                This is the perfect opportunity to lounge on the beach with a book, play a game, or chat with your traveling companions. After dinner, the evening is yours to spend as you wish. You might enjoy music, stories, and jokes which are often shared around the campfire, or if you’re in a reflective mood, you might lean back to enjoy the clarity of the big, star-filled sky.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="details-itinerary-info-desc-day">
+                        <button onclick="toggleDropdown('day2', this)">Day 2 <i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="day2" class="details-itinerary-desc-day-details">
+                            <p>After we eat a hearty breakfast and our gear has been loaded back onto the boats, we get back on the “T”. The adventure continues with exciting Class III-IV rapids such as Gray’s Grindstone, Thread the Needle, and Hell’s Kitchen.
+    
+                                The two-day trip provides us with more time to explore the hidden wonders of this canyon. Exciting explorations along the Tuolumne’s side streams bring us to waterfalls, swimming holes, natural waterslides, and clear creeks that offer excellent trout fishing. 
+                                
+                                As we reach Ward’s Ferry and flat water, our river trip draws to a close. At the take-out, an 2PM& shuttle will be waiting to give you a ride back to your car.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="details-itinerary-info-map">
+                    <h2>Meeting time & Place</h2>
+                    <div class="details-itinerary-info-map-item">
+                        <h3>Location</h3>
+                        <h5>Starbucks</h5>
+                        <p>3711 E Shaw Ave, Clovis, CA 93619, US</p>
+                    </div>
+                    <div class="details-itinerary-info-map-item">
+                        <h3>Time</h3>
+                        <p>8:30 AM</p>
+                    </div>
+                    <div class="details-itinerary-info-map-item">
+                        <h3>Return</h3>
+                        <p>Approximately 6:30 PM, depending on water levels</p>
+                    </div>
+                    <div class="details-itinerary-info-map-item">
+                        <h3>Map</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4974.620366509581!2d-119.64188239823264!3d36.80881264252745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945b6798778b57%3A0xe04dbb89bd457e0f!2sStarbucks!5e1!3m2!1svi!2s!4v1719900148105!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="details-itinerary-info-map-item">
+                        <a href="contact.html" class="book-btn">BOOK NOW</a>     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details-review">
+            <div class="details-review-title">
+                <h1>REVIEW SNAPSHOT</h1>
+                <span class="details-review-title-rcm">
+                    <h1>100%</h1>
+                    <p>of respondents would recommend this to a friend</p>
+                </span>
+            </div>
+            <div class="details-review-star">
+                <div class="details-review-star-destri">
+                    <h3>RATINGS DISTRIBUTION</h3>
+                    <button title="Show only 5 stars reviews">
+                        <p>5 Stars</p>
+                        <i class="fa-solid fa-star star-yellow"></i>
+                        <span class="star-bar"  id="five-stars" id="5stars"></span>
+                        <p>79</p>
+                    </button>
+                    <button title="Show only 4 stars reviews">
+                        <p>4 Stars</p>
+                        <i class="fa-solid fa-star star-yellow"></i>
+                        <span class="star-bar"  id="four-stars" ></span>
+                        <p>6</p>
+                    </button>
+                    <button title="Show only 3 stars reviews">
+                        <p>3 Stars</p>
+                        <i class="fa-solid fa-star star-yellow"></i>
+                        <span class="star-bar"  id="three-stars"></span>
+                        <p>2</p>
+                    </button>
+                    <button title="Show only 2 stars reviews">
+                        <p>2 Stars</p>
+                        <i class="fa-solid fa-star star-yellow"></i>
+                        <span class="star-bar"  id="two-stars"></span>
+                        <p>0</p>
+                    </button>
+                    <button title="Show only 1 star reviews">
+                        <p>1 Star</p>
+                        <i class="fa-solid fa-star star-yellow star-1"></i>
+                        <span class="star-bar"  id="one-star"></span>
+                        <p>0</p>
+                    </button>
+                </div>
+                <div class="details-review-star-amount">
+                    <div class="details-info-star mt-0">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div> 
+                    <p><b>4.9</b> (87 reviews)</p>
+                    <a href="#">Write a review</a>
+                </div>
+            </div>
+            <div class="details-review-sort">
+                <select>
+                    <option value="">Non-Sort</option>
+                    <option value="">Most recent</option>
+                    <option value="">Lowest rated</option>
+                    <option value="">Highest rated</option>
+                    <option value="">Oldest</option>
+                    <option value="">Image</option>
+                </select>
+            </div> 
+            <div class="details-review-area-container">
+                <div class="details-review-area">
+                    <h1>so much fun!!!</h1>
+                    <div class="details-info-star mt-0">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i>5</i>
+                    </div>
+                    <p>We went for a bachelorette trip and had the best time! The water was fast and high, and our guides Andrew and Adam rocked! The whole guide crew was a blast and made the trip super fun. Bring sunscreen.</p>
+                    <div class="details-review-area-auth">
+                        <p>By <b>Kala</b></p>
+                        <p>At <b>24/02/2024</b></p>
+                        <p>From <b>Oregon House, CA</b></p>
+                    </div>
+                    <span class="review-tag">Would recommend to friend</span>
+                    <span class="review-tag">Experienced guides</span>
+                    <span class="review-tag">Fun</span>
+                </div>
+                <div class="details-review-area">
+                    <h1>How turn 65</h1>
+                    <div class="details-info-star mt-0">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i>5</i>
+                    </div>
+                    <p>I was originally booked for a 3 day trip on the Tuolumne River but due to water flows it was done in 1 day. OARS did their best to make up for the change and did a great job.</p>
+                    <div class="details-review-area-auth">
+                        <p>By <b>Josh Smith</b></p>
+                        <p>At <b>24/01/2024</b></p>
+                        <p>From <b>Florida</b></p>
+                    </div>
+                    <span class="review-tag">Would recommend to friend</span>
+                    <span class="review-tag">Fun</span>
+
+                </div>
+                <div class="details-review-area">
+                    <h1>THIS TRIP IS AMAZING</h1>
+                    <div class="details-info-star mt-0">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i>5</i>
+                    </div>
+                    <p>I was nervous about the level of intensity of this trip on my middled-aged body. But, the guides were fantastic, the rapid were amazing, and although high intensity, it never felt scary or uncomfort</p>
+                    <div class="details-review-area-auth">
+                        <p>By <b>Thomas Timothy</b></p>
+                        <p>At <b>24/12/2023</b></p>
+                        <p>From <b>Dortmunch, Germany</b></p>
+                    </div>
+                    <span class="review-tag">Would recommend to friend</span>
+                    <span class="review-tag">Experienced guides</span>
+                </div>
+                <div class="details-review-area">
+                    <h1>GREAT TRIP!</h1>
+                    <div class="details-info-star mt-0">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i>5</i>
+                    </div>
+                    <p>My 16 year old daughter & I absolutely loved this trip. Our boat guide, Jack was great as was the entire crew. The river was a great mix of relaxing scenery and exciting rapids, especially Clavey Falls. We had a few people in our boat go for an unintended swim, which made it memorable. Food was very good - sandwiches & salads for lunch, french toast and sausage for breakfast, and steak & chicken tacos for dinner. Cooler full of soda and craft beer after the day on the water. Condiments were over the top. The side hikes to swim holes were fun, but I wish I would have purchased grippy water shoes as some of the rocks were very slick. Also wish I would have brought my hammock. No phots offered, so consider bringing a GoPro. Did not use the tent I rented, as the entire group just slept under the stars. Great trip, highly recommend.</p>
+                    <div class="details-review-area-auth">
+                        <p>By <b>Josh Smith</b></p>
+                        <p>At <b>03/11/2023</b></p>
+                        <p>From <b>West Michigan</b></p>
+                    </div>
+                    <span class="review-tag">Would recommend to friend</span>
+                    <span class="review-tag">Great food & drink</span>
+                </div>
+                <div class="details-review-area">
+                    <h1>DON'T MISS A GREAT OPPORTUNITY - THE TUOLUMNE AWAITS</h1>
+                    <div class="details-info-star mt-0">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i>5</i>
+                    </div>
+                    <p>Once again OARS delivers an exceptional value in the two day Tuolumne River, wine and dinner outing. As if the thrills of the Tuolumne are not enough, OARS partners with local chefs and wineries to highlight the local culture and provide participants a glimpse into the region. Plus, OARS guides focus on quality meals safely prepared, fun (and safe) river passages and the overall customer experience.</p>
+                    <div class="details-review-area-auth">
+                        <p>By <b>Josh Smith</b></p>
+                        <p>At <b>19/10/2023</b></p>
+                        <p>From <b>North Carolina</b></p>
+                    </div>
+                    <span class="review-tag">Would recommend to friend</span>
+                    <span class="review-tag">Fun</span>
+                </div>
+                <div class="details-review-area">
+                    <h1>THREE WONDERFUL DAYS ON THE TUOLOMNE!</h1>
+                    <div class="details-info-star mt-0">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i>5</i>
+                    </div>
+                    <p>Chris, Travis, Calvin, and Clavey made our 3 days on the Tuolumne River unforgettable. The white water was thrilling and the camping was relaxing making this the perfect adventure for our family.</p>
+                    <div class="details-review-area-auth">
+                        <p>By <b>Yoshida Akiko</b></p>
+                        <p>At <b>02/09/2023</b></p>
+                        <p>From <b>Tokyo, Japan</b></p>
+                    </div>
+                    <span class="review-tag">Would recommend to friend</span>
+                    <span class="review-tag">Well organized</span>
+                </div>
+                <button class="loadmore-btn">LOAD MORE</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container pd-32">
+        <div class="footer-media footer-item">
+            <img src="assest/img/logo-white.png" alt="">
+            <div class="footer-media-item">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <a class="contact-link" href="contact.html">CONTACT US</a>
+        </div>
+        <div class="footer-link footer-item">
+            <h3>QUICK LINKS</h3>
+            <a href="adventure.html">Adventures</a>
+            <a href="">Countries</a>
+            <a href="">Hotels</a>
+            <a href="about.html">About us</a>
+            <a href="blog.html">Blog</a>
+            <a href="destination.html">Dome tours</a>
+        </div>
+        <div class="footer-address footer-item">
+            <h3>ADDRESS</h3>
+            <p><i class="fa-solid fa-phone"></i>+84 923 123</p>
+            <p><i class="fa-solid fa-envelope"></i>2pm&@gm.uit.edu.vn</p>
+            <p><i class="fa-solid fa-home"></i>12/0 Duong So 1, Go Vap</p>
+            <img src="https://remarkable-jelly-df2aaa.netlify.app/assest/img/da-thong-bao-bo-cong-thuong.png" alt="">
+        </div>
+        <div class="footer-email footer-item">
+            <h3>GET EMAIL UPDATES</h3>
+            <p>Sign up today for monthly giveaways, engaging stories & videos, special offers & more!</p>
+            <input type="email" placeholder="email@examples.com">
+            <button>GET NEWSLETTER</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-items-container li').hover(function(){
+                $(this).children('.sub-nav').stop().slideDown(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            },function(){
+                $(this).children('.sub-nav').stop().slideUp(300).css({
+                    'height': 'fit-content',
+                    'display': 'block'
+                });
+            }
+            )
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script>
+        document.getElementById('panorama-img').onload = function() {
+            pannellum.viewer('panorama', {
+                "type": "equirectangular",
+                "panorama": this.src,
+                "autoLoad": true
+            });
+        };
+
+        function toggleDropdown(id, button) {
+            var content = document.getElementById(id);
+            var icon = button.querySelector('i');
+            
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                icon.classList.remove('fa-chevron-up'); 
+                icon.classList.add('fa-chevron-down');  
+            } else {
+                content.style.display = "block";
+                icon.classList.remove('fa-chevron-down'); 
+                icon.classList.add('fa-chevron-up');  
+            }
+        }
+    </script>   
+    <script>
+        function removeBG(){
+            var dayItems = document.querySelectorAll('.details-itinerary-day-item');
+            dayItems.forEach(function(dayItem) {
+                dayItem.classList.remove('details-itinerary-day-bg');
+            });
+        }
+        function threedays(currentElement){
+            removeBG();
+            currentElement.classList.add('details-itinerary-day-bg');
+            var itineraryDesc = document.querySelector('.details-itinerary-info-desc');
+            itineraryDesc.innerHTML = `
+            <h2>Itinerary at a Glance</h2>
+                    <p>We pride ourselves in running a relaxed and flexible schedule. Every Tuolumne River rafting trip is different depending upon the group, other trips on the water, camp locations, and sometimes the weather. The following is a sample of what your trip might be like:</p>
+                    <div class="details-itinerary-info-desc-day">
+                        <button onclick="toggleDropdown('day1', this)">Day 1 <i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="day1" class="details-itinerary-desc-day-details">
+                            <p>The morning of your trip, you’ll meet up with your trip leader and fellow travelers before embarking on a 3-mile hike to the river. At the put-in, your guides will deliver an orientation and safety talk and fit you with your helmet and PFD (wetsuits and splash tops are also included on all early-season and cold-weather trips). Then, we hit the water!
+    
+                                The Tuolumne is nearly consistent whitewater, with four exciting rapids in the first two miles: Rock Garden, Nemesis, Sunderlands Chute, and Ram’s Head. Come lunchtime, we’ll pull over to a sandy beach for a delicious picnic. 
+                                
+                                Downstream, we encounter the ultimate thrill: Clavey Falls; this Class IV+ rapid features a series of staircase drops that delivers unabashed excitement. Between rapids, you’re welcome to enjoy a refreshing swim in the calm stretches of cool water.
+                                
+                                We reach camp by mid- to late afternoon. Your guides will set up the kitchen, restroom, and common areas while you set up your tent. The guides will serve hors d’oeuvres while they prepare dinner.
+                                
+                                This is the perfect opportunity to lounge on the beach with a book, play a game, or chat with your traveling companions. After dinner, the evening is yours to spend as you wish. You might enjoy music, stories, and jokes which are often shared around the campfire, or if you’re in a reflective mood, you might lean back to enjoy the clarity of the big, star-filled sky.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="details-itinerary-info-desc-day">
+                        <button onclick="toggleDropdown('day2', this)">Day 2 <i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="day2" class="details-itinerary-desc-day-details">
+                            <p>After we eat a hearty breakfast and our gear has been loaded back onto the boats, we get back on the “T”. The adventure continues with exciting Class III-IV rapids such as Gray’s Grindstone, Thread the Needle, and Hell’s Kitchen.
+    
+                                The two-day trip provides us with more time to explore the hidden wonders of this canyon. Exciting explorations along the Tuolumne’s side streams bring us to waterfalls, swimming holes, natural waterslides, and clear creeks that offer excellent trout fishing. 
+                                
+                                As we reach Ward’s Ferry and flat water, our river trip draws to a close. At the take-out, an 2PM& shuttle will be waiting to give you a ride back to your car.
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="details-itinerary-info-desc-day">
+                        <button onclick="toggleDropdown('day3', this)">Day 3 <i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="day3" class="details-itinerary-desc-day-details">
+                            <p>After breakfast, we may spend a leisurely morning in camp savoring our last day in this serene wilderness setting.
+
+                                Once the gear is loaded back on the boats, the adventure continues with exciting Class III-IV rapids such as Gray’s Grindstone, Thread the Needle, and Hell’s Kitchen.
+                                
+                                As we reach Ward’s Ferry and flat water, our river trip draws to a close. At the take-out, an OARS shuttle will be waiting to give you a ride back to your car.
+                            </p>
+                        </div>
+                    </div> 
+            `
+        }
+        function twodays(currentElement){
+            removeBG();
+            currentElement.classList.add('details-itinerary-day-bg');
+            var itineraryDesc = document.querySelector('.details-itinerary-info-desc');
+            itineraryDesc.innerHTML = `
+            <h2>Itinerary at a Glance</h2>
+                    <p>We pride ourselves in running a relaxed and flexible schedule. Every Tuolumne River rafting trip is different depending upon the group, other trips on the water, camp locations, and sometimes the weather. The following is a sample of what your trip might be like:</p>
+                    <div class="details-itinerary-info-desc-day">
+                        <button onclick="toggleDropdown('day1', this)">Day 1 <i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="day1" class="details-itinerary-desc-day-details">
+                            <p>The morning of your trip, you’ll meet up with your trip leader and fellow travelers before embarking on a 3-mile hike to the river. At the put-in, your guides will deliver an orientation and safety talk and fit you with your helmet and PFD (wetsuits and splash tops are also included on all early-season and cold-weather trips). Then, we hit the water!
+    
+                                The Tuolumne is nearly consistent whitewater, with four exciting rapids in the first two miles: Rock Garden, Nemesis, Sunderlands Chute, and Ram’s Head. Come lunchtime, we’ll pull over to a sandy beach for a delicious picnic. 
+                                
+                                Downstream, we encounter the ultimate thrill: Clavey Falls; this Class IV+ rapid features a series of staircase drops that delivers unabashed excitement. Between rapids, you’re welcome to enjoy a refreshing swim in the calm stretches of cool water.
+                                
+                                We reach camp by mid- to late afternoon. Your guides will set up the kitchen, restroom, and common areas while you set up your tent. The guides will serve hors d’oeuvres while they prepare dinner.
+                                
+                                This is the perfect opportunity to lounge on the beach with a book, play a game, or chat with your traveling companions. After dinner, the evening is yours to spend as you wish. You might enjoy music, stories, and jokes which are often shared around the campfire, or if you’re in a reflective mood, you might lean back to enjoy the clarity of the big, star-filled sky.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="details-itinerary-info-desc-day">
+                        <button onclick="toggleDropdown('day2', this)">Day 2 <i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="day2" class="details-itinerary-desc-day-details">
+                            <p>After we eat a hearty breakfast and our gear has been loaded back onto the boats, we get back on the “T”. The adventure continues with exciting Class III-IV rapids such as Gray’s Grindstone, Thread the Needle, and Hell’s Kitchen.
+    
+                                The two-day trip provides us with more time to explore the hidden wonders of this canyon. Exciting explorations along the Tuolumne’s side streams bring us to waterfalls, swimming holes, natural waterslides, and clear creeks that offer excellent trout fishing. 
+                                
+                                As we reach Ward’s Ferry and flat water, our river trip draws to a close. At the take-out, an 2PM& shuttle will be waiting to give you a ride back to your car.
+                            </p>
+                        </div>
+                    </div> 
+            `
+        }
+    </script> 
+    <script>
+        const prevImg = document.getElementById('details-img-left-btn');
+        const nextImg = document.getElementById('details-img-right-btn');
+        prevImg.addEventListener('click', () => {
+            var imgSlideContainer = document.getElementById('details-img-container');
+            var imgItems = document.querySelectorAll('.details-img-item');
+            imgSlideContainer.prepend(imgItems[imgItems.length - 1]); 
+        });
+        setInterval(()=>{
+            var imgSlideContainer = document.getElementById('details-img-container');
+            var imgItems = document.querySelectorAll('.details-img-item');
+            imgSlideContainer.appendChild(imgItems[0]); 
+        },10000)
+        nextImg.addEventListener('click', () => {
+            var imgSlideContainer = document.getElementById('details-img-container');
+            var imgItems = document.querySelectorAll('.details-img-item');
+            imgSlideContainer.appendChild(imgItems[0]); 
+        });
+    </script>
+ <div>  
+</body>
+</html>

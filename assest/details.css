@@ -1,0 +1,383 @@
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.nav-container{
+    height: 65px !important;
+    box-shadow: 0px 1px 4px #888888 !important;
+    background-color: #ffff !important;
+}
+.nav-item,
+.nav-media-item{
+    color: #000 !important;
+}
+.details-page
+{
+   width: 100%;
+   margin: 65px 0;
+}
+.details-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 32px 64px;
+}
+.details-info > a{
+    color: #000;
+    border: 1px #ddd solid;
+    width: fit-content;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 16px;
+    font-size: 12px;
+}
+.details-info > h1{
+    font-size: 48px;
+    width: 60%;
+    margin: 64px 0;
+}
+.details-info-details{
+    display: inline-flex;
+    font-size: 16px;
+}
+.details-info-details > p:first-child{
+    padding-right: 24px;
+    border-right: #393939 1px solid;
+}
+.details-info-star{
+    margin: 0 4px 0 24px;
+}
+.details-info-star > i{
+    color: #f5b335;
+    margin: 0 2px;
+}
+.details-info-desc{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 64px 0;
+}
+.details-info-desc-item{
+    display: flex;
+    flex-direction: column; 
+    padding: 4px 8px;
+    border-right: 6px solid #f5b335;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 25%;
+    min-width: 10%
+}
+.details-info-desc-item > h3{
+    font-size: 13px;
+}
+.details-info-desc-item > p{
+    text-align: start;
+    font-size: 16px;
+    font-weight: 300;
+}
+.details-info-desc-item:last-child{
+    border: none;
+}
+.details-img{
+    width: 100%;
+    margin: 32px 0;
+    position: relative;
+}
+#details-img-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.details-img-item{
+    width: 50%;
+    height: 500px;
+    margin: 0 8px; 
+}
+.details-img-btn{
+    position: absolute;
+    background-color: #cf3333;
+    padding: 32px 40px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+.details-img-btn:hover{
+    opacity: .5;
+}
+#details-img-left-btn{
+    left: 0;
+    top: 50%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+#details-img-right-btn{
+    right: 0;
+    top: 50%;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+}
+.details-overview{
+    display: flex;
+    width: 100%;
+    margin: 64px 0;
+    padding: 32px 64px;
+}
+
+.details-overview-desc{
+    width: 50%;
+    padding-right: 32px;
+}
+.details-overview-desc > p{
+    margin-top: 16px;
+}
+.details-overview-highlight{
+    width: 50%;
+    padding-left: 32px;
+}
+.details-overview-highlight > ul > li{
+    margin: 16px 0;
+}
+.details-overview-highlight > ul > li > i{
+    margin-right: 4px;
+}
+.details-itinerary{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 64px;
+}
+.details-itinerary > h1{
+    font-size: 44px;
+}
+.details-itinerary-day{
+    margin: 64px 0;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px rgb(178, 185, 205) solid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.details-itinerary-day-item{
+    padding: 16px;
+    cursor: pointer;
+}
+.details-itinerary-day-bg{
+    background-color: #cf3333;
+    color: #fff;
+}
+.details-itinerary-info{
+    display: flex;
+    flex-direction: row;
+}
+.details-itinerary-info-desc{
+    width: 50%;
+    padding: 0 32px 0 0;
+}
+.details-itinerary-info-desc > p{
+    padding: 24px 0;
+    border-bottom: 1px solid rgb(178, 185, 205);
+    text-align: justify;
+}
+.details-itinerary-info-desc-day{
+    width: 100%; 
+    border-bottom: 1px solid rgb(178, 185, 205);
+    padding: 16px 8px;
+}
+.details-itinerary-info-desc-day > button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: start;
+    font-weight: 600;
+}
+.details-itinerary-info-desc-day > button > i{
+    font-size: 16px;
+}
+.details-itinerary-desc-day-details{
+    display: none;
+    padding: 16px 0;
+    text-align: justify;
+}
+
+.details-itinerary-info-map{
+    width: 50%;
+    padding: 0 0 0 32px;
+}
+.details-itinerary-info-map-item{
+    margin: 16px 0;
+}
+.details-itinerary-info-map-item > iframe{
+    width: 98%;
+    height: 400px;
+}
+.loadmore-btn,
+.details-itinerary-info-map-item .book-btn{
+    padding: 12px 16px;
+    cursor: pointer;
+    background-color: #cf3333;
+    font-size: 16px;
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border: 2px #cf3333 solid;
+}
+.loadmore-btn:hover,
+.details-itinerary-info-map-item .book-btn:hover{
+    background-color: #fff;
+    color: #cf3333; 
+}
+.details-review{
+    margin-top: 64px;
+    padding: 32px 64px;
+}
+.details-review-title{
+    display: flex;
+    justify-content: space-between;
+}
+.details-review-title  h1{
+    font-size: 56px;
+}
+.details-review-title-rcm{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    align-items: center;
+}
+.details-review-title-rcm > h1{
+    margin-right: 12px;
+}
+.details-review-star{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 32px 0;
+    justify-content: space-between;
+}
+.details-review-star-destri{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.details-review-star-destri > button{
+    display: flex;
+    border: none;
+    margin: 8px 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+.details-review-star-destri > button > p{
+    font-weight: 600;
+}
+.star-yellow{
+    color: #f5b335;
+}
+.star-1{
+    margin-left: 7px;
+}
+.star-bar{
+    width: 50%;
+    background-color: #ddd;
+    height: 100%;
+    position: relative;
+    margin: 0 8px;
+}
+#five-stars::after{
+    content: "";
+    width: 92%;
+    background-color: #f5b335;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#four-stars::after{
+    content: "";
+    width: 6%;
+    background-color: #f5b335;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#three-stars::after{
+    content: "";
+    width: 2%;
+    background-color: #f5b335;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.mt-0{
+    margin: 0;
+}
+.details-review-star-amount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    justify-content: center;
+}
+.details-review-star-amount > p{
+    margin: 8px 0;
+}
+.details-review-star-amount > a{
+    color: #cf3333;
+    font-weight: 600;
+}
+.details-review-area-container{
+    width: 100%; 
+}
+.details-review-sort{ 
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.details-review-sort > select{
+    padding: 16px 0;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    float: right;
+}
+.details-review-area{
+    width: 100%;
+    margin: 32px 0;
+    border-bottom: rgb(178, 185, 205) solid 1px;
+    padding: 16px;
+}
+.details-review-area > h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.details-review-area > p{
+    margin: 16px 0;
+}
+.details-review-area-auth > p{
+    margin: 8px 0;
+}
+.details-review-area-auth{
+    margin: 16px 0;
+}
+.review-tag{
+    border: #393939 1px solid;
+    padding: 4px 8px;
+    border-radius: 16px;
+}
