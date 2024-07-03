@@ -732,7 +732,7 @@ ul.sub-nav li i{
     height: 18px;
     background-color: #9d9d9d;
     position: absolute;
-    left: 48px;
+    left: 140%;
 }
 .tour-item-rate p,
 .tour-item-rate i{
