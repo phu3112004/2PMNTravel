@@ -37,7 +37,7 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
 .contact-slide-content{
-   height: 30%;
+   height: 50%;
    position: absolute;
    left: 100px;
    bottom: 100px;
