@@ -13,7 +13,21 @@ Welcome to the 2PM& Travel Website! This repository contains the front-end code 
 - Adventure Page: The Adventure Page highlights thrilling and adventurous travel experiences. It features activities such as hiking, whitewater rafting, and other adrenaline-pumping adventures. Each adventure is described in detail.
 - Activities Page: The Activities Page presents a wide range of activities available at different destinations. This includes leisure activities, cultural experiences, culinary tours, and more. Visitors can browse through various options, read descriptions, and find activities that match their interests.
 - All Tours Page: The All Tours Page lists all the tours offered by the travel company. It provides comprehensive details for each tour, including itineraries, pricing, duration, inclusions, and customer reviews. This page allows visitors to compare and select the tours that best suit their preferences and travel plans.
-- ## Video Demo
-- https://drive.google.com/file/d/1cRs1gfsIm8f36Q8mH0bukGOf4kUdBYex/view?usp=drive_link
-- ## Technology Used
-- [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
+## Video Demo
+https://drive.google.com/file/d/1cRs1gfsIm8f36Q8mH0bukGOf4kUdBYex/view?usp=drive_link
+## Technology Used
+[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
+## Get starting
+- Clone the repository:
+     `git clone https://github.com/yourusername/Project-Sun-asterisk.git`
+- Navigate to the project directory:
+     `cd Project-Sun-asterisk`
+- Install the necessary dependencies:
+     `npm install`
+- Start the development server:
+     `npm start`
+## Contribution 
+We welcome contributions to enhance the functionality and features of this travel website. Please fork the repository and submit pull requests for review.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
