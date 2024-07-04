@@ -27,7 +27,7 @@ https://drive.google.com/file/d/1cRs1gfsIm8f36Q8mH0bukGOf4kUdBYex/view?usp=drive
 - Start the development server:
      `npm start`
 ## Contribution 
-We welcome contributions to enhance the functionality and features of this travel website. Please fork the repository and submit pull requests for review.
+Welcome contributions to enhance the functionality and features of this travel website. Please fork the repository and submit pull requests for review.
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+This project is licensed under the MIT License.
 
