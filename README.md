@@ -19,7 +19,7 @@ https://drive.google.com/file/d/1cRs1gfsIm8f36Q8mH0bukGOf4kUdBYex/view?usp=drive
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
 ## Get starting
 - Clone the repository:
-     `git clone https://github.com/yourusername/Project-Sun-asterisk.git`
+     `git clone https://github.com/phu3112004/Project-Sun-asterisk.git`
 - Navigate to the project directory:
      `cd Project-Sun-asterisk`
 - Install the necessary dependencies:
