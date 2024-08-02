@@ -21,7 +21,7 @@ https://drive.google.com/file/d/1cRs1gfsIm8f36Q8mH0bukGOf4kUdBYex/view?usp=drive
 - Clone the repository:
      `git clone https://github.com/phu3112004/2PMNTravel.git`
 - Navigate to the project directory:
-     `cd Project-Sun-asterisk`
+     `cd 2PMNTravel`
 - Install the necessary dependencies:
      `npm install`
 - Start the development server:
